@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #00b214;
+  --color-primary-hover: #026d0e;
+  --color-primary-light: #8cca46;
+  --color-header-blue: #0000ff;
+  --color-header-dark: #0a0a0a;
+  --color-dark: #282828;
+  --color-dark-light: rgba(102, 102, 102, 0.7);
+  --color-red: #ff0000;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  font-size: 100%;
+  color: #282828;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
