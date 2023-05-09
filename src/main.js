@@ -6,6 +6,7 @@ import router from './router';
 
 import '@/assets/style/index.css';
 
+// sử dụng font-awesome
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';

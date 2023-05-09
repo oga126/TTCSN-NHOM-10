@@ -72,6 +72,7 @@ const NAVBAR_CATEGORY = [
   }
 ];
 
+// biển để kiểm tra button đã click để show dropdown hay không
 const isShowProductCategories = ref(false);
 </script>
 

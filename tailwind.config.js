@@ -3,6 +3,7 @@ module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      // custom color để sử dụng
       colors: {
         primary: '#00B214',
         'primary-hover': '#026D0E',

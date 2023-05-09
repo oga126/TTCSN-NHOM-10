@@ -1,3 +1,4 @@
+// database liên quan đến sản phẩm của hệ thống - fake data
 const db = {
   nl_mat_troi: {
     name: 'Đèn năng lượng mặt trời',
@@ -26,11 +27,11 @@ const db = {
             images: [
               'https://shopreview.vn/wp-content/uploads/2021/10/z2845918721679_4871ae5f6b71c3e46aa7aca7f5299b94.jpg',
               'https://shopreview.vn/wp-content/uploads/2021/10/z2970173567734_abf3cc4a028d024d8ec7b6e33b99b1f0.jpg',
-              'https://shopreview.vn/wp-content/uploads/2021/10/z3073530500692_7441faa5b7ae3e7ae80080cd16fde21f-768x768.jpg'
+              'https://shopreview.vn/wp-content/uploads/2021/10/z3073530500692_7441faa5b7ae3e7ae80080cd16fde21f-768x768.jpg',
             ],
             videos: [
               '<iframe width="560" height="315" src="https://www.youtube.com/embed/G2NHkk3oQo8" title="Bộ đèn pha năng lượng mặt trời 150W bao gồm 2 pha đèn độc lập và 1 tấm pin NLMT rời (DP35)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/c9dNa5R5p0I" title="Bộ đèn pha năng lượng mặt trời 150W bao gồm 2 pha đèn độc lập và 1 tấm pin NLMT rời (DP35)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/c9dNa5R5p0I" title="Bộ đèn pha năng lượng mặt trời 150W bao gồm 2 pha đèn độc lập và 1 tấm pin NLMT rời (DP35)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             power: 150,
             specifications: [
@@ -45,26 +46,26 @@ const db = {
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 15000mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối',
               'Pin khỏe giúp đèn sáng liên tục 12-16 tiếng mỗi tối',
               'Trang bị theo đèn là tấm pin năng lượng mặt trời kích thước 45x35cm. Đèn dùng pin mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao. Tâm pin mặt trời có dây nguồn nối dài 4.5m dễ dàng lắp đặt ở vị trí khác nhau',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Ban ngày tự động sạc đầy pin, buổi tối đèn tự động sáng',
               'Có điều khiển từ xa',
               'Có chức năng hẹn giờ thời gian sáng cần thiết',
               'Có chức năng hẹn giờ thời gian sáng cần thiết',
-              'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng'
+              'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng',
             ],
             mode: [
               'Tự động sáng khi trời tối',
               'Điều khiển chọn chế độ sáng hẹn giờ (3h 5h 8h)',
-              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng'
+              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng',
             ],
             suitable: [
               'Chiếu sáng sân vườn rộng (60-100m2)',
               'Chiếu sáng trang trại, kho bãi, hoặc không gian rộng',
               'Làm đèn đường',
-              'Treo lên cột hoặc treo lên tường nhà đều được'
-            ]
+              'Treo lên cột hoặc treo lên tường nhà đều được',
+            ],
           },
           {
             type: 'den-pha-nang-luong-mat-troi',
@@ -84,21 +85,21 @@ const db = {
             images: [
               'https://shopreview.vn/wp-content/uploads/2021/12/z3036751589912_0a61de233c89b11aa66d8f5beb8d700b.jpg',
               'https://shopreview.vn/wp-content/uploads/2021/12/z3036751498274_e080bc987454c2c382ac75c612b7f1d5.jpg',
-              'https://shopreview.vn/wp-content/uploads/2021/12/z3036751515385_da6876464cb2022269ff75f58eff3921-300x300.jpg'
+              'https://shopreview.vn/wp-content/uploads/2021/12/z3036751515385_da6876464cb2022269ff75f58eff3921-300x300.jpg',
             ],
             videos: [
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/g2cDqZSVX0M" title="Dây nguồn 4 lõi nối dài đèn năng lượng mặt trời, kết nối tấm pin NLMT với đèn, dài 5m (DP62)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/g2cDqZSVX0M" title="Dây nguồn 4 lõi nối dài đèn năng lượng mặt trời, kết nối tấm pin NLMT với đèn, dài 5m (DP62)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             specifications: [
               'Model mới nhất, hàng cao cấp, 4 lõi, 2 đầu xoáy chống nước',
               'Dây 4 lõi dùng cho đèn trang trí có bóng đổi màu nhiều màu sắc ánh sáng',
               'Thiết kế chuyên dụng để kết nối tấm pin năng lượng mặt trời với đèn',
               'Dây dài 5m dễ dàng kết nối và lắp đặt ở nhiều vị trí địa hình khác nhau',
-              'Giắc nối 2 đầu chuyên dụng để kết nối với tấm pin và kết nối với đèn'
+              'Giắc nối 2 đầu chuyên dụng để kết nối với tấm pin và kết nối với đèn',
             ],
             features: [],
             mode: [],
-            suitable: []
+            suitable: [],
           },
           {
             type: 'den-pha-nang-luong-mat-troi',
@@ -119,11 +120,11 @@ const db = {
               'https://shopreview.vn/wp-content/uploads/2022/06/O1CN01wmwAxl1SohHROwtzO_2207570022294-0-cib.jpg',
               'https://shopreview.vn/wp-content/uploads/2022/06/z3506686640958_5dea82b405956aaf23ab69aefa363a03.jpg',
               'https://shopreview.vn/wp-content/uploads/2022/06/z3507370068836_3814b4b3608e416faf4efbe7f043fb75.jpg',
-              'https://shopreview.vn/wp-content/uploads/2022/06/z3507370059029_d1157eda9776d699856b6735b3396f8e.jpg'
+              'https://shopreview.vn/wp-content/uploads/2022/06/z3507370059029_d1157eda9776d699856b6735b3396f8e.jpg',
             ],
             videos: [
               '<iframe width="560" height="315" src="https://www.youtube.com/embed/O9LmG2VgDag" title="Đèn pin xách tay đa năng có sạc bằng năng lượng mặt trời cực tiện dụng (DP68)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/ckSVwI1MbAg" title="Đèn pin xách tay đa năng có sạc bằng năng lượng mặt trời cực tiện dụng (DP68)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/ckSVwI1MbAg" title="Đèn pin xách tay đa năng có sạc bằng năng lượng mặt trời cực tiện dụng (DP68)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             specifications: [
               'Đèn trang bị 60 bóng led cao cấp, công suất 20W siêu sáng, tuổi thọ 100.000 giờ',
@@ -135,13 +136,13 @@ const db = {
               'Kích thước 21cm x 15cm x4cm',
               'Đèn thiết kế chống nước cao cấp, yên tâm khi sử dụng.',
               'Chất liệu nhựa ABS cao cấp chính hãng, bền bỉ, trống nước, sử dụng an toàn.',
-              'Trọng lương : 450g'
+              'Trọng lương : 450g',
             ],
             features: [],
             mode: [],
             suitable: [
-              'Cắm trại, câu cá, bán hàng, chơi thể thao, du lịch, dã ngoại, sửa chữa, cảnh báo, hoặc chiếu sáng bình thường …'
-            ]
+              'Cắm trại, câu cá, bán hàng, chơi thể thao, du lịch, dã ngoại, sửa chữa, cảnh báo, hoặc chiếu sáng bình thường …',
+            ],
           },
           {
             type: 'den-pha-nang-luong-mat-troi',
@@ -168,36 +169,36 @@ const db = {
               'Đèn trang bị pin sạc lithium cao cấp dung lượng lớn 50000mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối.',
               'Đặc  biệt pin khỏe giúp đèn có thể chiếu sáng trong 3 ngày khi trời mưa bão ít nắng',
               'Đặc  biệt pin khỏe giúp đèn có thể chiếu sáng trong 3 ngày khi trời mưa bão ít nắng',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất chuyển đổi năng lượng cao, đèn tích trữ năng lượng nhanh cho quá trình hoạt động tốt nhất. Pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất chuyển đổi năng lượng cao, đèn tích trữ năng lượng nhanh cho quá trình hoạt động tốt nhất. Pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Ban ngày tự động sạc đầy pin, buổi tối đèn tự động sáng',
               'Có điều khiển từ xa cực nhạy',
               'Có chức năng hẹn giờ thời gian sáng cần thiết',
-              'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng'
+              'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng',
             ],
             mode: [
               'Tự động sáng khi trời tối',
               'Điều khiển chọn chế độ sáng hẹn giờ (3h 5h 8h)',
-              'Tăng giảm độ sáng'
+              'Tăng giảm độ sáng',
             ],
             suitable: [
               'Chiếu sáng sân vườn rộng',
               'Chiếu sáng trang trại, kho bãi, hoặc không gian rộng 300-500m2',
               'Làm đèn đường',
-              'Treo lên cột hoặc treo lên tường nhà đều được'
+              'Treo lên cột hoặc treo lên tường nhà đều được',
             ],
             thumbnail:
               'https://shopreview.vn/wp-content/uploads/2022/08/wholesale-price-outdoor-waterproof-100w-200w-solar-panel-led-street-light-f0ef7d3b-c105-41ce-999a-4807ac35da66-1.jpg',
             images: [
               'https://shopreview.vn/wp-content/uploads/2022/08/tam-pin-nang-luong-den-duong-nang-luong-mat-troi-400w.jpg',
               'https://shopreview.vn/wp-content/uploads/2022/08/O1CN0171u4c11yIEvVe0TEp_2210236246555-0-cib.jpg',
-              'https://shopreview.vn/wp-content/uploads/2022/08/O1CN01uR8xLh24bpYcjbDLe_2212501807410-0-cib.jpg'
+              'https://shopreview.vn/wp-content/uploads/2022/08/O1CN01uR8xLh24bpYcjbDLe_2212501807410-0-cib.jpg',
             ],
             videos: [
               '<iframe width="560" height="315" src="https://www.youtube.com/embed/UVKvNZkWLy4" title="Đèn phi thuyền năng lượng mặt trời, pin cực khỏe, bóng led 400W siêu sáng (DP72)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/bnJ8WxIs7BU" title="Hướng dẫn cách lắp đặt đèn phi thuyền cực kỳ đơn giản" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
-            ]
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/bnJ8WxIs7BU" title="Hướng dẫn cách lắp đặt đèn phi thuyền cực kỳ đơn giản" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            ],
           },
           {
             type: 'den-pha-nang-luong-mat-troi',
@@ -226,37 +227,37 @@ const db = {
               'Đèn sử dụng bóng led thế hệ mới, hiệu suất cao, tiết kiệm năng lượng, dùng ổn định và tuổi thọ lên đến 50.000 giờ chiếu sáng (Tương đương 7-10 năm sử dụng)',
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 30000mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối.',
               'Pin khỏe giúp đèn sáng liên tục 12-18 tiếng mỗi tối',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp Polysilicon đa tinh thể hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp Polysilicon đa tinh thể hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Ban ngày tự động sạc đầy pin, buổi tối đèn tự động sáng',
               'Đèn trang bị radar cảm biến chuyển động chống trộm cao cấp, khi phát hiện người đi qua sẽ tự động sáng mạnh',
               'Có điều khiển từ xa',
               'Có chức năng hẹn giờ thời gian sáng cần thiết',
-              'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng'
+              'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng',
             ],
             mode: [
               'Tự động sáng khi trời tối',
               'Điều khiển chọn chế độ sáng hẹn giờ (2h 3h 4h 5h 8h)',
-              'Chế độ radar cảm biến tự động sáng mạnh khi có người đi qua (cảm biến rất nhạy), khi không có chuyển động đèn sẽ sáng chế độ tiết kiệm năng lượng'
+              'Chế độ radar cảm biến tự động sáng mạnh khi có người đi qua (cảm biến rất nhạy), khi không có chuyển động đèn sẽ sáng chế độ tiết kiệm năng lượng',
             ],
             suitable: [
               'Chiếu sáng sân vườn rộng (250-350m2)',
               'Chiếu sáng trang trại, kho bãi, hoặc không gian rộng',
               'Làm đèn đường',
-              'Treo lên cột hoặc treo lên tường nhà đều được'
+              'Treo lên cột hoặc treo lên tường nhà đều được',
             ],
             videos: [
               '<iframe width="560" height="315" src="https://www.youtube.com/embed/fz-lPlel2zo" title="Đèn chiếu sáng năng lượng mặt trời 1000W ASAKA siêu sáng, sử dụng pin NLMT cao cấp thế hệ mới (DP47)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/kDpAvHkEKcY" title="Đèn chiếu sáng năng lượng mặt trời 1000W siêu sáng, sử dụng pin NLMT cao cấp thế hệ mới (DP47)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/kDpAvHkEKcY" title="Đèn chiếu sáng năng lượng mặt trời 1000W siêu sáng, sử dụng pin NLMT cao cấp thế hệ mới (DP47)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             thumbnail:
               'https://shopreview.vn/wp-content/uploads/2021/12/z4242067029212_c0e7a544d435dc79e75031548fac27a5.jpg',
             images: [
               'https://shopreview.vn/wp-content/uploads/2021/12/z4242067034325_2ea4f0fa371e12cee556b86e35f56f5f.jpg',
               'https://shopreview.vn/wp-content/uploads/2021/12/z4242067045390_16f6e7e10dc1d76c3a0acb56d92fc64f.jpg',
-              'https://shopreview.vn/wp-content/uploads/2021/12/z4242067388655_8e69f474667a4c7ee5a390f55b6ab72b.jpg'
-            ]
+              'https://shopreview.vn/wp-content/uploads/2021/12/z4242067388655_8e69f474667a4c7ee5a390f55b6ab72b.jpg',
+            ],
           },
           {
             type: 'den-pha-nang-luong-mat-troi',
@@ -284,37 +285,37 @@ const db = {
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 20000mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối',
               'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
               'Trang bị theo đèn là tấm pin năng lượng mặt trời khá lớn kích thước 42x31cm. Đèn dùng pin mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cực cao. ',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Ban ngày tự động sạc đầy pin, buổi tối đèn tự động sáng',
               'Có điều khiển từ xa',
               'Có chức năng hẹn giờ thời gian sáng cần thiết',
               'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng',
-              'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng'
+              'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng',
             ],
             mode: [
               'Tự động sáng khi trời tối',
               'Điều khiển chọn chế độ sáng hẹn giờ (3h 5h 12h)',
               'Chế độ tự động cảm biến chuyển động, khi có người đi đến gần đèn sẽ sáng mạnh lên',
-              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng'
+              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng',
             ],
             suitable: [
               'Chiếu sáng sân vườn rộng (300-400m2)',
               'Chiếu sáng trang trại, kho bãi, hoặc không gian rộng',
               'Làm đèn đường',
-              'Treo lên cột hoặc treo lên tường nhà đều được'
+              'Treo lên cột hoặc treo lên tường nhà đều được',
             ],
             videos: [
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/enJ5VkyEyTA" title="Đèn năng lượng mặt trời đĩa bay với 5 pha đèn 500w, to như mâm cơm, sáng trắng và sáng vàng (DP42)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/enJ5VkyEyTA" title="Đèn năng lượng mặt trời đĩa bay với 5 pha đèn 500w, to như mâm cơm, sáng trắng và sáng vàng (DP42)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             thumbnail:
               'https://shopreview.vn/wp-content/uploads/2021/11/z2935680023201_0b4ea7d609ee01e4a095355cce26f0fe.jpg',
             images: [
               'https://shopreview.vn/wp-content/uploads/2021/11/z2935680063347_7a920c7dde1ce556d1cac5c918f75764.jpg',
               'https://shopreview.vn/wp-content/uploads/2021/11/z2935680065928_f02fba609cf18c128b3b3f8a85d62fd5.jpg',
-              'https://shopreview.vn/wp-content/uploads/2021/11/O1CN01xJ6hiX1wmo5Gla437_3527586351-0-cib.jpg'
-            ]
+              'https://shopreview.vn/wp-content/uploads/2021/11/O1CN01xJ6hiX1wmo5Gla437_3527586351-0-cib.jpg',
+            ],
           },
           {
             type: 'den-pha-nang-luong-mat-troi',
@@ -342,7 +343,7 @@ const db = {
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 20000mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối',
               'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
               'Trang bị theo đèn là tấm pin năng lượng mặt trời khá lớn kích thước 42x31cm. Đèn dùng pin mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cực cao. ',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Model mới nhất, hàng cao cấp chính hãng, đẹp tỉ mỉ đến từng chi tiết, vật liệu cao cấp siêu bền bỉ',
@@ -357,30 +358,30 @@ const db = {
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 20000mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối',
               'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
               'Trang bị theo đèn là tấm pin năng lượng mặt trời khá lớn kích thước 42x31cm. Đèn dùng pin mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cực cao. ',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             mode: [
               'Tự động sáng khi trời tối',
               'Điều khiển chọn chế độ sáng hẹn giờ (3h 5h 12h)',
               'Chế độ tự động cảm biến chuyển động, khi có người đi đến gần đèn sẽ sáng mạnh lên',
-              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng'
+              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng',
             ],
             suitable: [
               'Chiếu sáng sân vườn rộng (300-400m2)',
               'Chiếu sáng trang trại, kho bãi, hoặc không gian rộng',
               'Làm đèn đường',
-              'Treo lên cột hoặc treo lên tường nhà đều được'
+              'Treo lên cột hoặc treo lên tường nhà đều được',
             ],
             videos: [
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/VLfG00tEsdk" title="Đèn led năng lượng mặt trời solar light 300W thế hệ mới siêu sáng, siêu bền, pin khỏe (DP17)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/VLfG00tEsdk" title="Đèn led năng lượng mặt trời solar light 300W thế hệ mới siêu sáng, siêu bền, pin khỏe (DP17)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             thumbnail:
               'https://shopreview.vn/wp-content/uploads/2021/08/z2664992988709_d8bea1c862af4e21bd2d1b4bc3bec4c3-1.jpg',
             images: [
               'https://shopreview.vn/wp-content/uploads/2021/08/z2664992878427_1e375ee9896400184b147f00fa27d27d.jpg',
               'https://shopreview.vn/wp-content/uploads/2021/08/z2664992763504_6e6c405d90e35c4a1136c90af638fc9f.jpg',
-              'https://shopreview.vn/wp-content/uploads/2021/08/z2656748862859_78033308c32bfedb015af6c8737f1e96.jpg'
-            ]
+              'https://shopreview.vn/wp-content/uploads/2021/08/z2656748862859_78033308c32bfedb015af6c8737f1e96.jpg',
+            ],
           },
           {
             type: 'den-pha-nang-luong-mat-troi',
@@ -408,37 +409,37 @@ const db = {
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 20000mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối',
               'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
               'Trang bị theo đèn là tấm pin năng lượng mặt trời khá lớn kích thước 42x31cm. Đèn dùng pin mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cực cao. ',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Ban ngày tự động sạc đầy pin, buổi tối đèn tự động sáng',
               'Có điều khiển từ xa',
               'Có chức năng hẹn giờ thời gian sáng cần thiết',
               'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng',
-              'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng'
+              'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng',
             ],
             mode: [
               'Tự động sáng khi trời tối',
               'Điều khiển chọn chế độ sáng hẹn giờ (3h 5h 12h)',
               'Chế độ tự động cảm biến chuyển động, khi có người đi đến gần đèn sẽ sáng mạnh lên',
-              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng'
+              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng',
             ],
             suitable: [
               'Chiếu sáng sân vườn rộng (300-400m2)',
               'Chiếu sáng trang trại, kho bãi, hoặc không gian rộng',
               'Làm đèn đường',
-              'Treo lên cột hoặc treo lên tường nhà đều được'
+              'Treo lên cột hoặc treo lên tường nhà đều được',
             ],
             videos: [
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/vOe1yPoxeX4" title="Đèn cao áp cảm ứng năng lượng mặt trời 200W siêu sáng, siêu bền và khỏe (DP04)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/vOe1yPoxeX4" title="Đèn cao áp cảm ứng năng lượng mặt trời 200W siêu sáng, siêu bền và khỏe (DP04)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             thumbnail:
               'https://shopreview.vn/wp-content/uploads/2021/08/z2657798675870_5249dbe26e9ab10664583cde00ecbfc1-768x768.jpg',
             images: [
               'https://shopreview.vn/wp-content/uploads/2021/08/z2657332702023_e3025f54ff48641690416b1eee9cf7f6.jpg',
               'https://shopreview.vn/wp-content/uploads/2021/08/z2657798302038_5b4e3a8ce6084823713d030b23f135fc.jpg',
-              'https://shopreview.vn/wp-content/uploads/2021/08/z2657798352988_110ae9f9d4dc1c28032a16c33fc60228.jpg'
-            ]
+              'https://shopreview.vn/wp-content/uploads/2021/08/z2657798352988_110ae9f9d4dc1c28032a16c33fc60228.jpg',
+            ],
           },
           {
             type: 'den-pha-nang-luong-mat-troi',
@@ -466,38 +467,38 @@ const db = {
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 20000mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối',
               'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
               'Trang bị theo đèn là tấm pin năng lượng mặt trời khá lớn kích thước 42x31cm. Đèn dùng pin mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cực cao. ',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Ban ngày tự động sạc đầy pin, buổi tối đèn tự động sáng',
               'Có điều khiển từ xa',
               'Có chức năng hẹn giờ thời gian sáng cần thiết',
               'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng',
-              'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng'
+              'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng',
             ],
             mode: [
               'Tự động sáng khi trời tối',
               'Điều khiển chọn chế độ sáng hẹn giờ (3h 5h 12h)',
               'Chế độ tự động cảm biến chuyển động, khi có người đi đến gần đèn sẽ sáng mạnh lên',
-              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng'
+              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng',
             ],
             suitable: [
               'Chiếu sáng sân vườn rộng (300-400m2)',
               'Chiếu sáng trang trại, kho bãi, hoặc không gian rộng',
               'Làm đèn đường',
-              'Treo lên cột hoặc treo lên tường nhà đều được'
+              'Treo lên cột hoặc treo lên tường nhà đều được',
             ],
             videos: [
               '<iframe width="560" height="315" src="https://www.youtube.com/embed/v6TYoKStvhw" title="Đèn bulb năng lượng mặt trời bao gồm 2 bóng tròn 200w và 1 tấm pin NLMT rời dây dài  (DP50)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/UuXIv5uOhx8" title="Đèn bulb năng lượng mặt trời bao gồm 2 bóng tròn 200w và 1 tấm pin NLMT rời dây dài  (DP50)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/UuXIv5uOhx8" title="Đèn bulb năng lượng mặt trời bao gồm 2 bóng tròn 200w và 1 tấm pin NLMT rời dây dài  (DP50)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             thumbnail:
               'https://shopreview.vn/wp-content/uploads/2021/12/z3024000144132_a8ec00b24bb421474c46bbb3f5bb2e5d.jpg',
             images: [
               'https://shopreview.vn/wp-content/uploads/2021/12/15061529464_3575737.jpg',
               'https://shopreview.vn/wp-content/uploads/2021/12/z3023963283361_9315b2660b94e5316cf3fbca380f8413.jpg',
-              'https://shopreview.vn/wp-content/uploads/2021/12/z3068133003978_d4c455e9f9ed23c3520c40751487e821.jpg'
-            ]
+              'https://shopreview.vn/wp-content/uploads/2021/12/z3068133003978_d4c455e9f9ed23c3520c40751487e821.jpg',
+            ],
           },
           {
             type: 'den-pha-nang-luong-mat-troi',
@@ -525,39 +526,39 @@ const db = {
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 20000mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối',
               'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
               'Trang bị theo đèn là tấm pin năng lượng mặt trời khá lớn kích thước 42x31cm. Đèn dùng pin mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cực cao. ',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Ban ngày tự động sạc đầy pin, buổi tối đèn tự động sáng',
               'Có điều khiển từ xa',
               'Có chức năng hẹn giờ thời gian sáng cần thiết',
               'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng',
-              'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng'
+              'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng',
             ],
             mode: [
               'Tự động sáng khi trời tối',
               'Điều khiển chọn chế độ sáng hẹn giờ (3h 5h 12h)',
               'Chế độ tự động cảm biến chuyển động, khi có người đi đến gần đèn sẽ sáng mạnh lên',
-              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng'
+              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng',
             ],
             suitable: [
               'Chiếu sáng sân vườn rộng (300-400m2)',
               'Chiếu sáng trang trại, kho bãi, hoặc không gian rộng',
               'Làm đèn đường',
-              'Treo lên cột hoặc treo lên tường nhà đều được'
+              'Treo lên cột hoặc treo lên tường nhà đều được',
             ],
             videos: [
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/KmQfLvjlnwQ" title="Đèn solar light 120w năng lượng mặt trời cao cấp, tự động sáng, cảm biến tự động, siêu bền (DP20)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/KmQfLvjlnwQ" title="Đèn solar light 120w năng lượng mặt trời cao cấp, tự động sáng, cảm biến tự động, siêu bền (DP20)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             thumbnail:
               'https://shopreview.vn/wp-content/uploads/2021/08/z2665769882071_3bd2fbbee2c2e8e0faf462d304981c88.jpg',
             images: [
               'https://shopreview.vn/wp-content/uploads/2021/08/z2665769646895_3f4c7509231a88c322083a4f30ba6fe7.jpg',
               'https://shopreview.vn/wp-content/uploads/2021/08/z2665769676218_f26db0d975997f6ba332e04ffb4a763b.jpg',
-              'https://shopreview.vn/wp-content/uploads/2021/08/z2665769768607_9adad696e1807a5ee1d59d37be0d6938.jpg'
-            ]
-          }
-        ]
+              'https://shopreview.vn/wp-content/uploads/2021/08/z2665769768607_9adad696e1807a5ee1d59d37be0d6938.jpg',
+            ],
+          },
+        ],
       },
       //   đèn trang trí nlmt
       trang_tri: {
@@ -591,7 +592,7 @@ const db = {
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 600mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối',
               'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
               'Trang bị theo đèn là tấm pin năng lượng mặt trời khá lớn kích thước 42x31cm. Đèn dùng pin mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cực cao. ',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Ban ngày tự động sạc đầy pin, buổi tối đèn tự động sáng',
@@ -599,25 +600,25 @@ const db = {
               'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
               'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng',
               'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng',
-              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được'
+              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
             ],
             mode: [],
             suitable: [
               'Đèn chuyên dụng để ngoài trời với độ bền cao',
               'Dùng để trang trí sân vườn, ban công, lâu đài biệt thự, khu nghỉ dưỡng, tiểu cảnh …',
-              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh'
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
             ],
             videos: [
               '<iframe width="560" height="315" src="https://www.youtube.com/embed/wmsrytHM_FI" title="Đèn cắm cỏ năng lượng mặt trời siêu đẹp, hàng cao cấp siêu bền, có ánh sáng trắng và vàng (SV10)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/3kYSbWxcwI8" title="Đèn cắm cỏ năng lượng mặt trời siêu đẹp, hàng cao cấp siêu bền, có ánh sáng trắng và vàng (SV10)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/3kYSbWxcwI8" title="Đèn cắm cỏ năng lượng mặt trời siêu đẹp, hàng cao cấp siêu bền, có ánh sáng trắng và vàng (SV10)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             thumbnail:
               'https://shopreview.vn/wp-content/uploads/2021/08/17095064073_864962019-1-768x699.jpg',
             images: [
               'https://shopreview.vn/wp-content/uploads/2021/08/z2694910115153_b9f4a451c3a92b9d83558ce142b749e2.jpg',
               'https://shopreview.vn/wp-content/uploads/2021/08/z3583548429102_8847f1fb78ee0e6f44edff3264d3563c.jpg',
-              'https://shopreview.vn/wp-content/uploads/2021/08/z3583548450378_09a84491c1ada531ccfc80cb73a6031e.jpg'
-            ]
+              'https://shopreview.vn/wp-content/uploads/2021/08/z3583548450378_09a84491c1ada531ccfc80cb73a6031e.jpg',
+            ],
           },
           {
             type: 'den-trang-tri-nang-luong-mat-troi',
@@ -646,7 +647,7 @@ const db = {
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 600mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối',
               'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
               'Trang bị theo đèn là tấm pin năng lượng mặt trời khá lớn kích thước 42x31cm. Đèn dùng pin mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cực cao. ',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Ban ngày tự động sạc đầy pin, buổi tối đèn tự động sáng',
@@ -654,29 +655,29 @@ const db = {
               'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
               'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng',
               'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng',
-              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được'
+              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
             ],
             mode: [
               'Tự động sáng khi trời tối',
               'Điều khiển chọn chế độ sáng hẹn giờ (3h 5h 12h)',
               'Chế độ tự động cảm biến chuyển động, khi có người đi đến gần đèn sẽ sáng mạnh lên',
-              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng'
+              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng',
             ],
             suitable: [
               'Đèn chuyên dụng để ngoài trời với độ bền cao',
               'Dùng để trang trí sân vườn, ban công, lâu đài biệt thự, khu nghỉ dưỡng, tiểu cảnh …',
-              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh'
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
             ],
             videos: [
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/CkIDqKbsJDg" title="Đèn cắm đất trang trí sân vườn khảm trai sử dụng pin năng lượng mặt trời đẹp lung linh (SV13)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/CkIDqKbsJDg" title="Đèn cắm đất trang trí sân vườn khảm trai sử dụng pin năng lượng mặt trời đẹp lung linh (SV13)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             thumbnail:
               'https://shopreview.vn/wp-content/uploads/2022/07/O1CN0179T8z11zvSVpGIHLY_3906606776-0-cib-1-768x768.jpg',
             images: [
               'https://shopreview.vn/wp-content/uploads/2022/07/z3742618877954_c5227541068c13d0a7e7c285bcc34105.jpg',
               'https://shopreview.vn/wp-content/uploads/2022/07/21356943570_715370740.jpg',
-              'https://shopreview.vn/wp-content/uploads/2022/07/9644666301_425902414-1.jpg'
-            ]
+              'https://shopreview.vn/wp-content/uploads/2022/07/9644666301_425902414-1.jpg',
+            ],
           },
           {
             type: 'den-trang-tri-nang-luong-mat-troi',
@@ -705,7 +706,7 @@ const db = {
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 600mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối',
               'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
               'Trang bị theo đèn là tấm pin năng lượng mặt trời khá lớn kích thước 42x31cm. Đèn dùng pin mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cực cao. ',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Ban ngày tự động sạc đầy pin, buổi tối đèn tự động sáng',
@@ -713,30 +714,30 @@ const db = {
               'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
               'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng',
               'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng',
-              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được'
+              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
             ],
             mode: [
               'Tự động sáng khi trời tối',
               'Điều khiển chọn chế độ sáng hẹn giờ (3h 5h 12h)',
               'Chế độ tự động cảm biến chuyển động, khi có người đi đến gần đèn sẽ sáng mạnh lên',
-              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng'
+              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng',
             ],
             suitable: [
               'Đèn chuyên dụng để ngoài trời với độ bền cao',
               'Dùng để trang trí sân vườn, ban công, lâu đài biệt thự, khu nghỉ dưỡng, tiểu cảnh …',
-              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh'
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
             ],
             videos: [
               '<iframe width="560" height="315" src="https://www.youtube.com/embed/WcsMzQ3hfEI" title="Đèn cắm năng lượng mặt trời trang trí sân vườn tiểu cảnh cực đẹp, chống nước, tự động sáng (SV12)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/bPeSqfGCmZ0" title="Đèn cắm năng lượng mặt trời trang trí sân vườn tiểu cảnh cực đẹp, chống nước, tự động sáng (SV12)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/bPeSqfGCmZ0" title="Đèn cắm năng lượng mặt trời trang trí sân vườn tiểu cảnh cực đẹp, chống nước, tự động sáng (SV12)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             thumbnail:
               'https://shopreview.vn/wp-content/uploads/2021/08/O1CN01IV62Rw1pBWbd66FLo_965505322-0-cib.jpg',
             images: [
               'https://shopreview.vn/wp-content/uploads/2021/08/O1CN01jlvdiN1pBWbl5WXD4_965505322-0-cib.jpg',
               'https://shopreview.vn/wp-content/uploads/2021/08/O1CN01jlvdiN1pBWbl5WXD4_965505322-0-cib.jpg',
-              'https://shopreview.vn/wp-content/uploads/2021/08/z3488091669720_0bf78beb472e2d360784492a7e3ef930.jpg'
-            ]
+              'https://shopreview.vn/wp-content/uploads/2021/08/z3488091669720_0bf78beb472e2d360784492a7e3ef930.jpg',
+            ],
           },
           {
             type: 'den-trang-tri-nang-luong-mat-troi',
@@ -765,7 +766,7 @@ const db = {
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 600mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối',
               'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
               'Trang bị theo đèn là tấm pin năng lượng mặt trời khá lớn kích thước 42x31cm. Đèn dùng pin mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cực cao. ',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Ban ngày tự động sạc đầy pin, buổi tối đèn tự động sáng',
@@ -773,29 +774,29 @@ const db = {
               'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
               'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng',
               'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng',
-              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được'
+              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
             ],
             mode: [
               'Tự động sáng khi trời tối',
               'Điều khiển chọn chế độ sáng hẹn giờ (3h 5h 12h)',
               'Chế độ tự động cảm biến chuyển động, khi có người đi đến gần đèn sẽ sáng mạnh lên',
-              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng'
+              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng',
             ],
             suitable: [
               'Đèn chuyên dụng để ngoài trời với độ bền cao',
               'Dùng để trang trí sân vườn, ban công, lâu đài biệt thự, khu nghỉ dưỡng, tiểu cảnh …',
-              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh'
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
             ],
             videos: [
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/s7LPKvChS_E" title="Đèn cắm sân vườn trang trí năng lượng mặt trời tối tự động sáng cực đẹp (SV39)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/s7LPKvChS_E" title="Đèn cắm sân vườn trang trí năng lượng mặt trời tối tự động sáng cực đẹp (SV39)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             thumbnail:
               'https://shopreview.vn/wp-content/uploads/2021/12/10788110958_1302717013-768x768.jpg',
             images: [
               'https://shopreview.vn/wp-content/uploads/2021/12/10731648553_1302717013.jpg',
               'https://shopreview.vn/wp-content/uploads/2021/12/18765789911_606721891.jpg',
-              'https://shopreview.vn/wp-content/uploads/2021/12/18765795742_606721891.jpg'
-            ]
+              'https://shopreview.vn/wp-content/uploads/2021/12/18765795742_606721891.jpg',
+            ],
           },
           {
             type: 'den-trang-tri-nang-luong-mat-troi',
@@ -823,7 +824,7 @@ const db = {
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 600mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối',
               'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
               'Trang bị theo đèn là tấm pin năng lượng mặt trời khá lớn kích thước 42x31cm. Đèn dùng pin mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cực cao. ',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Ban ngày tự động sạc đầy pin, buổi tối đèn tự động sáng',
@@ -831,30 +832,30 @@ const db = {
               'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
               'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng',
               'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng',
-              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được'
+              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
             ],
             mode: [
               'Tự động sáng khi trời tối',
               'Điều khiển chọn chế độ sáng hẹn giờ (3h 5h 12h)',
               'Chế độ tự động cảm biến chuyển động, khi có người đi đến gần đèn sẽ sáng mạnh lên',
-              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng'
+              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng',
             ],
             suitable: [
               'Đèn chuyên dụng để ngoài trời với độ bền cao',
               'Dùng để trang trí sân vườn, ban công, lâu đài biệt thự, khu nghỉ dưỡng, tiểu cảnh …',
-              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh'
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
             ],
             videos: [
               '<iframe width="560" height="315" src="https://www.youtube.com/embed/GhmRQWYerG0" title="Đèn nhấp nháy năng lượng mặt trời để trang trí ngoài trời cực đẹp và hiện đại (SV52)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/PGHIPz7nrCk" title="Đèn nhấp nháy năng lượng mặt trời để trang trí ngoài trời cực đẹp và hiện đại (SV52)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/PGHIPz7nrCk" title="Đèn nhấp nháy năng lượng mặt trời để trang trí ngoài trời cực đẹp và hiện đại (SV52)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             thumbnail:
               'https://shopreview.vn/wp-content/uploads/2021/12/20763457988_864962019-1-768x530.jpg',
             images: [
               'https://shopreview.vn/wp-content/uploads/2021/12/20844890894_864962019-768x1668.jpg',
               'https://shopreview.vn/wp-content/uploads/2021/12/20844884920_864962019.jpg',
-              'https://shopreview.vn/wp-content/uploads/2021/12/20844890894_864962019.jpg'
-            ]
+              'https://shopreview.vn/wp-content/uploads/2021/12/20844890894_864962019.jpg',
+            ],
           },
           {
             type: 'den-trang-tri-nang-luong-mat-troi',
@@ -880,7 +881,7 @@ const db = {
               'Đèn sử dụng bóng led thế hệ mới, hiệu suất cao, tiết kiệm năng lượng, dùng ổn định và tuổi thọ lên đến 50.000 giờ chiếu sáng (Tương đương 7-10 năm sử dụng)',
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 600mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối',
               'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Ban ngày tự động sạc đầy pin, buổi tối đèn tự động sáng',
@@ -888,30 +889,30 @@ const db = {
               'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
               'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng',
               'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng',
-              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được'
+              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
             ],
             mode: [
               'Tự động sáng khi trời tối',
               'Điều khiển chọn chế độ sáng hẹn giờ (3h 5h 12h)',
               'Chế độ tự động cảm biến chuyển động, khi có người đi đến gần đèn sẽ sáng mạnh lên',
-              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng'
+              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng',
             ],
             suitable: [
               'Đèn chuyên dụng để ngoài trời với độ bền cao',
               'Dùng để trang trí sân vườn, ban công, lâu đài biệt thự, khu nghỉ dưỡng, tiểu cảnh …',
-              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh'
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
             ],
             videos: [
               '<iframe width="560" height="315" src="https://www.youtube.com/embed/3E6GT7EIw7c" title="Đèn nháy led năng lượng mặt trời dài 22m với 200 bóng led hình quả cầu pha lê cực đẹp (SV34)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/wbaQ_3dTUsI" title="Đèn nháy led năng lượng mặt trời dài 22m với 200 bóng led hình quả cầu pha lê cực đẹp (SV34)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/wbaQ_3dTUsI" title="Đèn nháy led năng lượng mặt trời dài 22m với 200 bóng led hình quả cầu pha lê cực đẹp (SV34)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             thumbnail:
               'https://shopreview.vn/wp-content/uploads/2021/10/z4028649830558_980a4f9e8d031412edce4356d370fb5d-1-768x768.jpg',
             images: [
               'https://shopreview.vn/wp-content/uploads/2021/10/z4028649724691_5adf886e68b03b82ab980fd85927cdde.jpg',
               'https://shopreview.vn/wp-content/uploads/2021/10/z4028649760878_2732952578ed27525f1dee31f6a9dc5d.jpg',
-              'https://shopreview.vn/wp-content/uploads/2021/10/z4028649788490_6024f8ddb42778499424287613ab98af.jpg'
-            ]
+              'https://shopreview.vn/wp-content/uploads/2021/10/z4028649788490_6024f8ddb42778499424287613ab98af.jpg',
+            ],
           },
           {
             type: 'den-trang-tri-nang-luong-mat-troi',
@@ -937,7 +938,7 @@ const db = {
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 600mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối',
               'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
               'Trang bị theo đèn là tấm pin năng lượng mặt trời khá lớn kích thước 42x31cm. Đèn dùng pin mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cực cao.',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Ban ngày tự động sạc đầy pin, buổi tối đèn tự động sáng',
@@ -945,30 +946,30 @@ const db = {
               'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
               'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng',
               'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng',
-              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được'
+              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
             ],
             mode: [
               'Tự động sáng khi trời tối',
               'Điều khiển chọn chế độ sáng hẹn giờ (3h 5h 12h)',
               'Chế độ tự động cảm biến chuyển động, khi có người đi đến gần đèn sẽ sáng mạnh lên',
-              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng'
+              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng',
             ],
             suitable: [
               'Đèn chuyên dụng để ngoài trời với độ bền cao',
               'Dùng để trang trí sân vườn, ban công, lâu đài biệt thự, khu nghỉ dưỡng, tiểu cảnh …',
-              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh'
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
             ],
             videos: [
               '<iframe width="560" height="315" src="https://www.youtube.com/embed/WHpgEfr2nwU" title="Đèn trang trí năng lượng mặt trời dạng dây led với bóng hình bông tuyết cực đẹp (SV74)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/BK-9dK6I8-Q" title="Đèn trang trí năng lượng mặt trời dạng dây led với bóng hình bông tuyết cực đẹp (SV74)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/BK-9dK6I8-Q" title="Đèn trang trí năng lượng mặt trời dạng dây led với bóng hình bông tuyết cực đẹp (SV74)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             thumbnail:
               'https://shopreview.vn/wp-content/uploads/2022/07/21702357247_864962019-768x661.jpg',
             images: [
               'https://shopreview.vn/wp-content/uploads/2022/07/z3562001579550_7b686895c610dde55da64aa073e2a2bd.jpg',
               'https://shopreview.vn/wp-content/uploads/2022/07/z3562001599835_8c24dd75aafdd8a9b438917e7a7195cb.jpg',
-              'https://shopreview.vn/wp-content/uploads/2022/07/z3565149682156_a1f6b8dd3d2a637fdaf15e518de8ee33.jpg'
-            ]
+              'https://shopreview.vn/wp-content/uploads/2022/07/z3565149682156_a1f6b8dd3d2a637fdaf15e518de8ee33.jpg',
+            ],
           },
           {
             type: 'den-trang-tri-nang-luong-mat-troi',
@@ -994,7 +995,7 @@ const db = {
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 600mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối',
               'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
               'Trang bị theo đèn là tấm pin năng lượng mặt trời khá lớn kích thước 42x31cm. Đèn dùng pin mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cực cao.',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Ban ngày tự động sạc đầy pin, buổi tối đèn tự động sáng',
@@ -1002,29 +1003,29 @@ const db = {
               'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
               'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng',
               'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng',
-              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được'
+              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
             ],
             mode: [
               'Tự động sáng khi trời tối',
               'Điều khiển chọn chế độ sáng hẹn giờ (3h 5h 12h)',
               'Chế độ tự động cảm biến chuyển động, khi có người đi đến gần đèn sẽ sáng mạnh lên',
-              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng'
+              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng',
             ],
             suitable: [
               'Đèn chuyên dụng để ngoài trời với độ bền cao',
               'Dùng để trang trí sân vườn, ban công, lâu đài biệt thự, khu nghỉ dưỡng, tiểu cảnh …',
-              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh'
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
             ],
             videos: [
               '<iframe width="560" height="315" src="https://www.youtube.com/embed/CZEifV6wXiY" title="Đèn trang trí ngoài trời hình ngọn nến cực đẹp dùng pin năng lượng mặt trời tối tự động sáng (SV78)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/poAufJH-OH0" title="Đèn trang trí ngoài trời hình ngọn nến cực đẹp dùng pin năng lượng mặt trời tối tự động sáng (SV78)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/poAufJH-OH0" title="Đèn trang trí ngoài trời hình ngọn nến cực đẹp dùng pin năng lượng mặt trời tối tự động sáng (SV78)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             thumbnail: 'https://shopreview.vn/wp-content/uploads/2022/09/17311620286_864962019.jpg',
             images: [
               'https://shopreview.vn/wp-content/uploads/2022/09/z3738740562538_86b663ad2a1402a0c4984b7e77300a89-768x768.jpg',
               'https://shopreview.vn/wp-content/uploads/2022/09/O1CN019NA2511XQwoqQWUmO_3390252919-0-cib.jpg',
-              'https://shopreview.vn/wp-content/uploads/2022/09/O1CN015Y60Rm1XQwoqQbBze_3390252919-0-cib.jpg'
-            ]
+              'https://shopreview.vn/wp-content/uploads/2022/09/O1CN015Y60Rm1XQwoqQbBze_3390252919-0-cib.jpg',
+            ],
           },
           {
             type: 'den-trang-tri-nang-luong-mat-troi',
@@ -1049,7 +1050,7 @@ const db = {
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 2000mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối',
               'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
               'Trang bị theo đèn là tấm pin năng lượng mặt trời khá lớn kích thước 42x31cm. Đèn dùng pin mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cực cao.',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Ban ngày tự động sạc đầy pin, buổi tối đèn tự động sáng',
@@ -1057,30 +1058,30 @@ const db = {
               'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
               'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng',
               'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng',
-              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được'
+              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
             ],
             mode: [
               'Tự động sáng khi trời tối',
               'Điều khiển chọn chế độ sáng hẹn giờ (3h 5h 12h)',
               'Chế độ tự động cảm biến chuyển động, khi có người đi đến gần đèn sẽ sáng mạnh lên',
-              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng'
+              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng',
             ],
             suitable: [
               'Đèn chuyên dụng để ngoài trời với độ bền cao',
               'Dùng để trang trí sân vườn, ban công, lâu đài biệt thự, khu nghỉ dưỡng, tiểu cảnh …',
-              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh'
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
             ],
             videos: [
               '<iframe width="560" height="315" src="https://www.youtube.com/embed/EKwTHEdXslo" title="Đèn trang trí sân vườn ban công tường rào sử dụng năng lượng mặt trời cao cấp độ bền 10 năm (SV50)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/NOR0UG4YaUk" title="Đèn trang trí sân vườn ban công tường rào sử dụng năng lượng mặt trời cao cấp độ bền 10 năm (SV50)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/NOR0UG4YaUk" title="Đèn trang trí sân vườn ban công tường rào sử dụng năng lượng mặt trời cao cấp độ bền 10 năm (SV50)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             thumbnail:
               'https://shopreview.vn/wp-content/uploads/2021/12/O1CN01T1RAcN1hDnc0cdiNq_2211319224244-0-cib-Copy-2-768x724.jpg',
             images: [
               'https://shopreview.vn/wp-content/uploads/2021/12/z3028000126499_50613d43e965a6ec8a8534dd1284373f.jpg',
               'https://shopreview.vn/wp-content/uploads/2021/12/O1CN01fty7zq1hDnc0cZgqG_2211319224244-0-cib-Copy.jpg',
-              'https://shopreview.vn/wp-content/uploads/2021/12/O1CN01fty7zq1hDnc0cZgqG_2211319224244-0-cib-Copy.jpg'
-            ]
+              'https://shopreview.vn/wp-content/uploads/2021/12/O1CN01fty7zq1hDnc0cZgqG_2211319224244-0-cib-Copy.jpg',
+            ],
           },
           {
             type: 'den-trang-tri-nang-luong-mat-troi',
@@ -1105,7 +1106,7 @@ const db = {
               'Đèn trang bị pin sạc lithium cao cấp dung lượng 600mAh siêu bền, pin sẽ được tự động sạc đầy vào ban ngày qua tấm pin mặt trời và cung cấp điện chiếu sáng cho đèn vào buổi tối',
               'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
               'Trang bị theo đèn là tấm pin năng lượng mặt trời khá lớn kích thước 42x31cm. Đèn dùng pin mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cực cao.',
-              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ'
+              'Đặc biệt đèn sử dụng pin năng lượng mặt trời cao cấp hiệu suất cao, pin gắn liền trên thân đèn giúp dễ dàng lắp đặt, đèn nhìn gọn gàng và rất thẩm mỹ',
             ],
             features: [
               'Ban ngày tự động sạc đầy pin, buổi tối đèn tự động sáng',
@@ -1113,46 +1114,642 @@ const db = {
               'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
               'Giúp quý khách tiết kiệm rất nhiều tiền điện tiêu thụ hàng tháng',
               'Đèn sử dụng chip điều khiển thông minh thế hệ mới, tự động điều chỉnh điện năng tiêu thụ vào những ngày mưa hoặc thiếu ánh sáng, giúp đèn duy trì năng lượng hoạt động hoàn hảo cả những ngày mưa hay thiếu ánh sáng',
-              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được'
+              'Lắp đặt cực kỳ đơn giản, chỉ cần cắm đèn xuống đất ở vị trí mong muốn là được',
             ],
             mode: [
               'Tự động sáng khi trời tối',
               'Điều khiển chọn chế độ sáng hẹn giờ (3h 5h 12h)',
               'Chế độ tự động cảm biến chuyển động, khi có người đi đến gần đèn sẽ sáng mạnh lên',
-              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng'
+              'Chế độ bật tắt, tăng giảm độ sáng thủ công bằng tay tùy vào nhu cầu sử dụng',
             ],
             suitable: [
               'Đèn chuyên dụng để ngoài trời với độ bền cao',
               'Dùng để trang trí sân vườn, ban công, lâu đài biệt thự, khu nghỉ dưỡng, tiểu cảnh …',
-              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh'
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
             ],
             videos: [
-              '<iframe width="560" height="315" src="https://www.youtube.com/embed/GEFcTYN5cI8" title="Đèn treo tường treo cột trang trí nội ngoại thất hợp kim nhôm cực đẹp, dùng điện lưới 220V (SV63)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/GEFcTYN5cI8" title="Đèn treo tường treo cột trang trí nội ngoại thất hợp kim nhôm cực đẹp, dùng điện lưới 220V (SV63)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
             ],
             thumbnail:
               'https://shopreview.vn/wp-content/uploads/2021/12/O1CN01T9dDdT1YDxCyyEsrz_4183933026-0-cib-768x846.jpg',
             images: [
               'https://shopreview.vn/wp-content/uploads/2021/12/O1CN01lSBzyH1YDxD48l5Dr_4183933026-0-cib-768x874.jpg',
               'https://shopreview.vn/wp-content/uploads/2021/12/O1CN01buPn5Y1YDxD5fDpRj_4183933026-0-cib-768x599.jpg',
-              'https://shopreview.vn/wp-content/uploads/2021/12/O1CN01buPn5Y1YDxD5fDpRj_4183933026-0-cib-768x599.jpg'
-            ]
-          }
-        ]
+              'https://shopreview.vn/wp-content/uploads/2021/12/O1CN01buPn5Y1YDxD5fDpRj_4183933026-0-cib-768x599.jpg',
+            ],
+          },
+        ],
       },
       //   đèn trụ cổng, trụ cột
       tru_cong_tru_cot: {
         name: 'Đèn trụ cổng, trụ cột',
         slugy: 'den-tru-cong-tru-cot',
-        products: []
+        products: [
+          {
+            type: 'den-tru-cong-tru-cot',
+            url_offical:
+              'https://shopreview.vn/mua/den-trang-tri-nang-luong-mat-troi/den-trang-tri-ngoai-troi-hinh-tru-vuong-phong-cach-chau-au-su-dung-pin-nang-luong-mat-troi-cuc-dep-cs01/',
+            index: 'TC01',
+            name: 'Đèn trang trí ngoài trời hình trụ vuông phong cách châu âu sử dụng pin năng lượng mặt trời cực đẹp (CS01)',
+            slugy_name:
+              'den-trang-tri-ngoai-troi-hinh-tru-vuong-phong-cach-chau-au-su-dung-pin-nang-luong-mat-troi-cuc-dep-cs01',
+            price: '1.260.000',
+            cur_price: '1.100.000',
+            discount: '13%',
+            quantity: ~~(Math.random() * 10),
+            power: 5,
+            specifications: [
+              'Có thể lắp thêm bóng điện và đấu trực tiếp với điện lưới trong nhà để sử dụng',
+              'Kích thước: Đèn cao 60.5cm, hộp đèn vuông cạnh 15cm , nặng 2.6kg, đế vuông 20cm',
+              'Chất liệu: Thân đèn làm bằng hợp  kim sơn tĩnh điện cao cấp đẹp tỉ mỉ và siêu bền, pha đèn bằng mica cao cấp, giúp đèn có độ bền đẹp rất cao',
+              'Màu sắc ánh sáng: Có 4 màu ánh sáng trắng, vàng, trung tính và đỏ chuyển đổi qua điều khiển rất tiện lợi',
+              'Màu sắc đèn: Đèn màu đen cực đẹp và sang trọng',
+              'Đèn thiết kế chuyên dụng để ngoài trời: Chống bụi, chống côn trùng bay vào, chống nước hoàn hảo,  không ngại thời tiết nắng mưa gió bão, chịu mọi điều kiện thời tiết',
+              'Đèn sử dụng bóng 24 led thế hệ mới công suất 5W, hiệu suất cao, mang lại độ sáng rất tốt, là điểm nhấn cho không gian của bạn, dùng ổn định và tuổi thọ lên đến 50.000 giờ chiếu sáng (Tương đương 7-10 năm sử dụng)',
+              'Ngoài ra đèn có trang bị thêm dây điện nguồn và đui bóng đèn, có thể đấu với nguồn điện lưới trong nhà để sử dụng như những đèn trụ cổng bình thường cho độ bền vĩnh cửu',
+              'Đèn được trang bị tấm pin năng lượng mặt trời kích thước 11x11cm cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Đèn được trang bị tấm pin năng lượng mặt trời kích thước 11x11cm cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
+            ],
+            features: [
+              'Ban ngày tự động sạc đầy pin bằng năng lượng mặt trời, buổi tối đèn tự động bật sáng',
+              'Có 4 màu sắc ánh sáng: màu Vàng, Trung tính, Trắng và Đỏ chuyển đổi chế độ màu sắc bằng điều khiển từ xa',
+              'Có thể hẹn giờ sáng và tăng giảm độ sáng bằng điều khiển',
+              'Có thể lắp thêm bóng điện và đấu trực tiếp với điện lưới trong nhà để sử dụng',
+            ],
+            mode: [],
+            suitable: [
+              'Đèn chuyên dụng để ngoài trời với độ bền cao',
+              'Dùng để trang trí sân vườn, tiểu cảnh, khuôn viên…',
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
+            ],
+            videos: [
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/FjroEFlDNJ0" title="Đèn trang trí ngoài trời hình trụ vuông phong cách châu âu sử dụng pin năng lượng mặt trời (CS01)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/40F8DNv9eQc" title="Đèn trang trí hình trụ vuông phong cách châu âu sử dụng pin năng lượng mặt trời cực đẹp (CS01)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            ],
+            thumbnail:
+              'https://shopreview.vn/wp-content/uploads/2022/08/O1CN01oy6zAk1YDxDCoRDMG_4183933026-0-cib-768x936.jpg',
+            images: [
+              'https://shopreview.vn/wp-content/uploads/2022/08/z3641933726078_d69e00abc8cdd6cba36b7559ee5b4f0f.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/08/z3641933731916_8e80519e2478f3f83288f534691cd0b4.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/08/z3641933745747_342cc4ddbe00f1b5e29c259326850ff1.jpg',
+            ],
+          },
+          {
+            type: 'den-tru-cong-tru-cot',
+            url_offical:
+              'https://shopreview.vn/mua/den-trang-tri-nang-luong-mat-troi/den-nang-luong-mat-troi-trang-tri-san-vuon-khuon-vien-voi-chan-cao-2-1m-cuc-dep-cs03/',
+            index: 'CS03',
+            name: 'Đèn năng lượng mặt trời trang trí sân vườn khuôn viên, chân cao 2.1m bằng nhôm đúc cực đẹp (CS03)',
+            slugy_name:
+              'den-nang-luong-mat-troi-trang-tri-san-vuon-khuon-vien-chan-cao-21m-bang-nhom-duc-cuc-dep-cs03',
+            price: '2.550.000',
+            cur_price: '2.250.000',
+            discount: '12%',
+            quantity: ~~(Math.random() * 10),
+            power: 10,
+            specifications: [
+              'Có thể lắp thêm bóng điện và đấu trực tiếp với điện lưới trong nhà để sử dụng',
+              'Kích thước: Đèn cao 60.5cm, hộp đèn vuông cạnh 15cm , nặng 2.6kg, đế vuông 20cm',
+              'Chất liệu: Thân đèn làm bằng hợp  kim sơn tĩnh điện cao cấp đẹp tỉ mỉ và siêu bền, pha đèn bằng mica cao cấp, giúp đèn có độ bền đẹp rất cao',
+              'Màu sắc ánh sáng: Có 4 màu ánh sáng trắng, vàng, trung tính và đỏ chuyển đổi qua điều khiển rất tiện lợi',
+              'Màu sắc đèn: Đèn màu đen cực đẹp và sang trọng',
+              'Đèn thiết kế chuyên dụng để ngoài trời: Chống bụi, chống côn trùng bay vào, chống nước hoàn hảo,  không ngại thời tiết nắng mưa gió bão, chịu mọi điều kiện thời tiết',
+              'Đèn sử dụng bóng 24 led thế hệ mới công suất 5W, hiệu suất cao, mang lại độ sáng rất tốt, là điểm nhấn cho không gian của bạn, dùng ổn định và tuổi thọ lên đến 50.000 giờ chiếu sáng (Tương đương 7-10 năm sử dụng)',
+              'Ngoài ra đèn có trang bị thêm dây điện nguồn và đui bóng đèn, có thể đấu với nguồn điện lưới trong nhà để sử dụng như những đèn trụ cổng bình thường cho độ bền vĩnh cửu',
+              'Đèn được trang bị tấm pin năng lượng mặt trời kích thước 11x11cm cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Đèn được trang bị tấm pin năng lượng mặt trời kích thước 11x11cm cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
+            ],
+            features: [
+              'Ban ngày tự động sạc đầy pin bằng năng lượng mặt trời, buổi tối đèn tự động bật sáng',
+              'Có 4 màu sắc ánh sáng: màu Vàng, Trung tính, Trắng và Đỏ chuyển đổi chế độ màu sắc bằng điều khiển từ xa',
+              'Có thể hẹn giờ sáng và tăng giảm độ sáng bằng điều khiển',
+              'Có thể lắp thêm bóng điện và đấu trực tiếp với điện lưới trong nhà để sử dụng',
+            ],
+            mode: [],
+            suitable: [
+              'Đèn chuyên dụng để ngoài trời với độ bền cao',
+              'Dùng để trang trí sân vườn, tiểu cảnh, khuôn viên…',
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
+            ],
+            videos: [
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/6mYuM8eIAF0" title="Đèn năng lượng mặt trời trang trí sân vườn khuôn viên, chân cao 2.1m bằng nhôm đúc cực đẹp (CS03)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/2DuLOpJXwVQ" title="Đèn năng lượng mặt trời trang trí sân vườn khuôn viên, chân cao 2.1m bằng nhôm đúc cực đẹp (CS03)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            ],
+            thumbnail:
+              'https://shopreview.vn/wp-content/uploads/2022/08/O1CN01tlEFoC1YDxDHiIjvG_4183933026-0-cib.jpg',
+            images: [
+              'https://shopreview.vn/wp-content/uploads/2022/08/z3660555469586_40fb21de4b911e691afbb877fadabbd7.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/08/9647366718_1653086412.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/08/z3695196332499_8e2ab072f08c0379d66c51155bfe62fd.jpg',
+            ],
+          },
+          {
+            type: 'den-tru-cong-tru-cot',
+            url_offical:
+              'https://shopreview.vn/mua/den-tru-cong-tru-cot/den-cong-hang-rao-nang-luong-mat-troi-size-30cm-bang-hop-kim-nhom-cao-cap-cuc-dep-tc08/',
+            index: 'TC08',
+            name: 'Đèn cổng hàng rào năng lượng mặt trời size 30cm bằng hợp kim nhôm cao cấp cực đẹp (TC08)',
+            slugy_name:
+              'den-cong-hang-rao-nang-luong-mat-troi-size-30cm-bang-hop-kim-nhom-cao-cap-cuc-dep-tc08',
+            price: '1.560.000',
+            cur_price: '1.250.000',
+            discount: '20%',
+            quantity: ~~(Math.random() * 10),
+            power: 10,
+            specifications: [
+              'Có thể lắp thêm bóng điện và đấu trực tiếp với điện lưới trong nhà để sử dụng',
+              'Kích thước: Đèn cao 60.5cm, hộp đèn vuông cạnh 15cm , nặng 2.6kg, đế vuông 20cm',
+              'Chất liệu: Thân đèn làm bằng hợp  kim sơn tĩnh điện cao cấp đẹp tỉ mỉ và siêu bền, pha đèn bằng mica cao cấp, giúp đèn có độ bền đẹp rất cao',
+              'Màu sắc ánh sáng: Có 4 màu ánh sáng trắng, vàng, trung tính và đỏ chuyển đổi qua điều khiển rất tiện lợi',
+              'Màu sắc đèn: Đèn màu đen cực đẹp và sang trọng',
+              'Đèn thiết kế chuyên dụng để ngoài trời: Chống bụi, chống côn trùng bay vào, chống nước hoàn hảo,  không ngại thời tiết nắng mưa gió bão, chịu mọi điều kiện thời tiết',
+              'Đèn sử dụng bóng 24 led thế hệ mới công suất 5W, hiệu suất cao, mang lại độ sáng rất tốt, là điểm nhấn cho không gian của bạn, dùng ổn định và tuổi thọ lên đến 50.000 giờ chiếu sáng (Tương đương 7-10 năm sử dụng)',
+              'Ngoài ra đèn có trang bị thêm dây điện nguồn và đui bóng đèn, có thể đấu với nguồn điện lưới trong nhà để sử dụng như những đèn trụ cổng bình thường cho độ bền vĩnh cửu',
+              'Đèn được trang bị tấm pin năng lượng mặt trời kích thước 11x11cm cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Đèn được trang bị tấm pin năng lượng mặt trời kích thước 11x11cm cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
+            ],
+            features: [
+              'Ban ngày tự động sạc đầy pin bằng năng lượng mặt trời, buổi tối đèn tự động bật sáng',
+              'Có 4 màu sắc ánh sáng: màu Vàng, Trung tính, Trắng và Đỏ chuyển đổi chế độ màu sắc bằng điều khiển từ xa',
+              'Có thể hẹn giờ sáng và tăng giảm độ sáng bằng điều khiển',
+              'Có thể lắp thêm bóng điện và đấu trực tiếp với điện lưới trong nhà để sử dụng',
+            ],
+            mode: [],
+            suitable: [
+              'Đèn chuyên dụng để ngoài trời với độ bền cao',
+              'Dùng để trang trí sân vườn, tiểu cảnh, khuôn viên…',
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
+            ],
+            videos: [
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/pptZWtquhNo" title="Đèn cổng hàng rào năng lượng mặt trời size 30cm bằng hợp kim nhôm cao cấp cực đẹp (TC08)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/qYwv4LITkOk" title="Đèn cổng hàng rào năng lượng mặt trời size 30cm bằng hợp kim nhôm cao cấp cực đẹp (TC08)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            ],
+            thumbnail:
+              'https://shopreview.vn/wp-content/uploads/2022/08/z3720381234166_cbc9a202857bc8fcb352a59f81d0c617-768x768.jpg',
+            images: [
+              'https://shopreview.vn/wp-content/uploads/2022/08/O1CN01SqLoPh1YDxD5JvM6X_4183933026-0-cib-1-768x682.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/08/O1CN01NmSb0Q1YDxDAPn0ib_4183933026-0-cib-768x692.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/08/z3723756403399_89149beec985a27004dc9ee1430ada2a-768x768.jpg',
+            ],
+          },
+          {
+            type: 'den-tru-cong-tru-cot',
+            url_offical:
+              'https://shopreview.vn/mua/den-tru-cong-tru-cot/den-qua-cau-gan-tru-cong-size-40cm-bang-nhua-acrylic-cao-cap-sieu-dep-dung-pin-nlmt-tc19/',
+            index: 'TC19',
+            name: 'Đèn quả cầu gắn trụ cổng size 40cm bằng nhựa Acrylic cao cấp siêu đẹp, dùng pin NLMT (TC19)',
+            slugy_name:
+              'den-qua-cau-gan-tru-cong-size-40cm-bang-nhua-acrylic-cao-cap-sieu-dep-dung-pin-nlmt-tc19',
+            price: '1.640.000',
+            cur_price: '1.450.000',
+            discount: '12%',
+            quantity: ~~(Math.random() * 10),
+            power: 15,
+            specifications: [
+              'Có thể lắp thêm bóng điện và đấu trực tiếp với điện lưới trong nhà để sử dụng',
+              'Kích thước: Đèn cao 60.5cm, hộp đèn vuông cạnh 15cm , nặng 2.6kg, đế vuông 20cm',
+              'Chất liệu: Thân đèn làm bằng hợp  kim sơn tĩnh điện cao cấp đẹp tỉ mỉ và siêu bền, pha đèn bằng mica cao cấp, giúp đèn có độ bền đẹp rất cao',
+              'Màu sắc ánh sáng: Có 4 màu ánh sáng trắng, vàng, trung tính và đỏ chuyển đổi qua điều khiển rất tiện lợi',
+              'Màu sắc đèn: Đèn màu đen cực đẹp và sang trọng',
+              'Đèn thiết kế chuyên dụng để ngoài trời: Chống bụi, chống côn trùng bay vào, chống nước hoàn hảo,  không ngại thời tiết nắng mưa gió bão, chịu mọi điều kiện thời tiết',
+              'Đèn sử dụng bóng 24 led thế hệ mới công suất 5W, hiệu suất cao, mang lại độ sáng rất tốt, là điểm nhấn cho không gian của bạn, dùng ổn định và tuổi thọ lên đến 50.000 giờ chiếu sáng (Tương đương 7-10 năm sử dụng)',
+              'Ngoài ra đèn có trang bị thêm dây điện nguồn và đui bóng đèn, có thể đấu với nguồn điện lưới trong nhà để sử dụng như những đèn trụ cổng bình thường cho độ bền vĩnh cửu',
+              'Đèn được trang bị tấm pin năng lượng mặt trời kích thước 11x11cm cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Đèn được trang bị tấm pin năng lượng mặt trời kích thước 11x11cm cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
+            ],
+            features: [
+              'Ban ngày tự động sạc đầy pin bằng năng lượng mặt trời, buổi tối đèn tự động bật sáng',
+              'Có 4 màu sắc ánh sáng: màu Vàng, Trung tính, Trắng và Đỏ chuyển đổi chế độ màu sắc bằng điều khiển từ xa',
+              'Có thể hẹn giờ sáng và tăng giảm độ sáng bằng điều khiển',
+              'Có thể lắp thêm bóng điện và đấu trực tiếp với điện lưới trong nhà để sử dụng',
+            ],
+            mode: [],
+            suitable: [
+              'Đèn chuyên dụng để ngoài trời với độ bền cao',
+              'Dùng để trang trí sân vườn, tiểu cảnh, khuôn viên…',
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
+            ],
+            videos: [
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/z0tsxueQTjw" title="Đèn quả cầu gắn trụ cổng size 40cm bằng nhựa Acrylic cao cấp siêu đẹp, dùng pin NLMT (TC19)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/xPTx4M_OnXA" title="Đèn quả cầu gắn trụ cổng size 40cm bằng nhựa Acrylic cao cấp siêu đẹp, dùng pin NLMT (TC19)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            ],
+            thumbnail:
+              'https://shopreview.vn/wp-content/uploads/2022/09/z3738936920125_a141951e292d6b6c78e45b774adefe4c-1-768x768.jpg',
+            images: [
+              'https://shopreview.vn/wp-content/uploads/2022/09/z3738936944683_439796868f03b3a23a5ed927d3c46ed4-768x768.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/09/z3738936936024_da9537869e12fea9ffa2e73198f40e5f-768x768.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/09/z3738934268626_ac5bfbac8589afc86c859379f07b82bf-768x768.jpg',
+            ],
+          },
+          {
+            type: 'den-tru-cong-tru-cot',
+            url_offical:
+              'https://shopreview.vn/mua/den-tru-cong-tru-cot/den-tru-cong-biet-thu-mau-moi-cuc-dep-hinh-hop-30cm-cao-36cm-hop-kim-nhom-cao-cap-tc05/',
+            index: 'TC05',
+            name: 'Đèn trụ cổng biệt thự mẫu mới cực đẹp, hình hộp 30cm cao 36cm, hợp kim nhôm cao cấp (TC05)',
+            slugy_name:
+              'den-tru-cong-biet-thu-mau-moi-cuc-dep-hinh-hop-30cm-cao-36cm-hop-kim-nhom-cao-cap-tc05',
+            price: '2.200.000',
+            cur_price: '1.850.000',
+            discount: '16%',
+            quantity: ~~(Math.random() * 10),
+            power: 7,
+            specifications: [
+              'Có thể lắp thêm bóng điện và đấu trực tiếp với điện lưới trong nhà để sử dụng',
+              'Kích thước: Đèn cao 60.5cm, hộp đèn vuông cạnh 15cm , nặng 2.6kg, đế vuông 20cm',
+              'Chất liệu: Thân đèn làm bằng hợp  kim sơn tĩnh điện cao cấp đẹp tỉ mỉ và siêu bền, pha đèn bằng mica cao cấp, giúp đèn có độ bền đẹp rất cao',
+              'Màu sắc ánh sáng: Có 4 màu ánh sáng trắng, vàng, trung tính và đỏ chuyển đổi qua điều khiển rất tiện lợi',
+              'Màu sắc đèn: Đèn màu đen cực đẹp và sang trọng',
+              'Đèn thiết kế chuyên dụng để ngoài trời: Chống bụi, chống côn trùng bay vào, chống nước hoàn hảo,  không ngại thời tiết nắng mưa gió bão, chịu mọi điều kiện thời tiết',
+              'Đèn sử dụng bóng 24 led thế hệ mới công suất 5W, hiệu suất cao, mang lại độ sáng rất tốt, là điểm nhấn cho không gian của bạn, dùng ổn định và tuổi thọ lên đến 50.000 giờ chiếu sáng (Tương đương 7-10 năm sử dụng)',
+              'Ngoài ra đèn có trang bị thêm dây điện nguồn và đui bóng đèn, có thể đấu với nguồn điện lưới trong nhà để sử dụng như những đèn trụ cổng bình thường cho độ bền vĩnh cửu',
+              'Đèn được trang bị tấm pin năng lượng mặt trời kích thước 11x11cm cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Đèn được trang bị tấm pin năng lượng mặt trời kích thước 11x11cm cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
+            ],
+            features: [
+              'Ban ngày tự động sạc đầy pin bằng năng lượng mặt trời, buổi tối đèn tự động bật sáng',
+              'Có 4 màu sắc ánh sáng: màu Vàng, Trung tính, Trắng và Đỏ chuyển đổi chế độ màu sắc bằng điều khiển từ xa',
+              'Có thể hẹn giờ sáng và tăng giảm độ sáng bằng điều khiển',
+              'Có thể lắp thêm bóng điện và đấu trực tiếp với điện lưới trong nhà để sử dụng',
+            ],
+            mode: [],
+            suitable: [
+              'Đèn chuyên dụng để ngoài trời với độ bền cao',
+              'Dùng để trang trí sân vườn, tiểu cảnh, khuôn viên…',
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
+            ],
+            videos: [
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/-aYSDqrbX78" title="Đèn trụ cổng biệt thự mẫu mới cực đẹp, hình hộp 30cm cao 36cm, hợp kim nhôm cao cấp (TC05)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/fS2eh1obbag" title="Đèn trụ cổng biệt thự mẫu mới cực đẹp, hình hộp 30cm cao 36cm, hợp kim nhôm cao cấp (TC05)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            ],
+            thumbnail:
+              'https://shopreview.vn/wp-content/uploads/2022/08/z3720900856430_154590dc73bb8504cd7cbab0eadbd374-768x925.jpg',
+            images: [
+              'https://shopreview.vn/wp-content/uploads/2022/08/z3722945004583_cc5ce067de5c9a36e5a4baa86fe8df49.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/08/z3720878089329_43448ad65830fa5c131f1c75d14fa09d-768x768.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/08/z3720876652290_4c1b2e75f8c03813fd4022eab49724c2-768x768.jpg',
+            ],
+          },
+          {
+            type: 'den-tru-cong-tru-cot',
+            url_offical:
+              'https://shopreview.vn/mua/den-trang-tri-nang-luong-mat-troi/den-tru-cong-hinh-vuong-canh-25cm-dung-pin-nlmt-phong-cach-hien-dai-cuc-dep-tc03/',
+            index: 'TC03',
+            name: 'Đèn trụ cổng hình vuông cạnh 25cm dùng pin NLMT, phong cách hiện đại cực đẹp (TC03)',
+            slugy_name:
+              'den-tru-cong-hinh-vuong-canh-25cm-dung-pin-nlmt-phong-cach-hien-dai-cuc-dep-tc03',
+            price: '1.990.000',
+            cur_price: '1.750.000',
+            discount: '12%',
+            quantity: ~~(Math.random() * 10),
+            power: 10,
+            specifications: [
+              'Có thể lắp thêm bóng điện và đấu trực tiếp với điện lưới trong nhà để sử dụng',
+              'Kích thước: Đèn cao 60.5cm, hộp đèn vuông cạnh 15cm , nặng 2.6kg, đế vuông 20cm',
+              'Chất liệu: Thân đèn làm bằng hợp  kim sơn tĩnh điện cao cấp đẹp tỉ mỉ và siêu bền, pha đèn bằng mica cao cấp, giúp đèn có độ bền đẹp rất cao',
+              'Màu sắc ánh sáng: Có 4 màu ánh sáng trắng, vàng, trung tính và đỏ chuyển đổi qua điều khiển rất tiện lợi',
+              'Màu sắc đèn: Đèn màu đen cực đẹp và sang trọng',
+              'Đèn thiết kế chuyên dụng để ngoài trời: Chống bụi, chống côn trùng bay vào, chống nước hoàn hảo,  không ngại thời tiết nắng mưa gió bão, chịu mọi điều kiện thời tiết',
+              'Đèn sử dụng bóng 24 led thế hệ mới công suất 5W, hiệu suất cao, mang lại độ sáng rất tốt, là điểm nhấn cho không gian của bạn, dùng ổn định và tuổi thọ lên đến 50.000 giờ chiếu sáng (Tương đương 7-10 năm sử dụng)',
+              'Ngoài ra đèn có trang bị thêm dây điện nguồn và đui bóng đèn, có thể đấu với nguồn điện lưới trong nhà để sử dụng như những đèn trụ cổng bình thường cho độ bền vĩnh cửu',
+              'Đèn được trang bị tấm pin năng lượng mặt trời kích thước 11x11cm cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Đèn được trang bị tấm pin năng lượng mặt trời kích thước 11x11cm cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
+            ],
+            features: [
+              'Ban ngày tự động sạc đầy pin bằng năng lượng mặt trời, buổi tối đèn tự động bật sáng',
+              'Có 4 màu sắc ánh sáng: màu Vàng, Trung tính, Trắng và Đỏ chuyển đổi chế độ màu sắc bằng điều khiển từ xa',
+              'Có thể hẹn giờ sáng và tăng giảm độ sáng bằng điều khiển',
+              'Có thể lắp thêm bóng điện và đấu trực tiếp với điện lưới trong nhà để sử dụng',
+            ],
+            mode: [],
+            suitable: [
+              'Đèn chuyên dụng để ngoài trời với độ bền cao',
+              'Dùng để trang trí sân vườn, tiểu cảnh, khuôn viên…',
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
+            ],
+            videos: [
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/F14F97MbF7A" title="Đèn trụ cổng hình vuông cạnh 25cm dùng pin NLMT, phong cách hiện đại cực đẹp (TC03)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/2XdPAXM6KLM" title="Đèn trụ cổng hình vuông cạnh 25cm dùng pin NLMT, phong cách hiện đại cực đẹp (TC03)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            ],
+            thumbnail:
+              'https://shopreview.vn/wp-content/uploads/2022/08/O1CN01D3S3OS1N8xARIlebz_2208922161526-0-cib-768x574.jpg',
+            images: [
+              'https://shopreview.vn/wp-content/uploads/2022/08/O1CN012GWWgC24AoDsFZwtx_2211646977351-0-cib-768x706.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/08/O1CN01ul1zgb2MpGItorBWZ_942209876-0-cib-768x732.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/08/O1CN01Ssk8aB2MpGIpqIXUU_942209876-0-cib.jpg',
+            ],
+          },
+          {
+            type: 'den-tru-cong-tru-cot',
+            url_offical:
+              'https://shopreview.vn/mua/den-tru-cong-tru-cot/den-tru-cong-tuong-rao-hinh-vuong-det-size-27cm-cuc-dep-va-hien-dai-dung-dien-220v-tc20/',
+            index: 'TC20',
+            name: 'Đèn trụ cổng tường rào hình vuông dẹt size 27cm cực đẹp và hiện đại dùng điện 220V (TC20)',
+            slugy_name:
+              'den-tru-cong-tuong-rao-hinh-vuong-det-size-27cm-cuc-dep-va-hien-djai-dung-dien-220v-tc20',
+            price: '1.180.000',
+            cur_price: '990.000',
+            discount: '15%',
+            quantity: ~~(Math.random() * 10),
+            power: 0,
+            specifications: [
+              'Có thể lắp thêm bóng điện và đấu trực tiếp với điện lưới trong nhà để sử dụng',
+              'Kích thước: Đèn cao 60.5cm, hộp đèn vuông cạnh 15cm , nặng 2.6kg, đế vuông 20cm',
+              'Chất liệu: Thân đèn làm bằng hợp  kim sơn tĩnh điện cao cấp đẹp tỉ mỉ và siêu bền, pha đèn bằng mica cao cấp, giúp đèn có độ bền đẹp rất cao',
+              'Màu sắc ánh sáng: Có 4 màu ánh sáng trắng, vàng, trung tính và đỏ chuyển đổi qua điều khiển rất tiện lợi',
+              'Màu sắc đèn: Đèn màu đen cực đẹp và sang trọng',
+              'Đèn thiết kế chuyên dụng để ngoài trời: Chống bụi, chống côn trùng bay vào, chống nước hoàn hảo,  không ngại thời tiết nắng mưa gió bão, chịu mọi điều kiện thời tiết',
+              'Đèn sử dụng bóng 24 led thế hệ mới công suất 5W, hiệu suất cao, mang lại độ sáng rất tốt, là điểm nhấn cho không gian của bạn, dùng ổn định và tuổi thọ lên đến 50.000 giờ chiếu sáng (Tương đương 7-10 năm sử dụng)',
+              'Ngoài ra đèn có trang bị thêm dây điện nguồn và đui bóng đèn, có thể đấu với nguồn điện lưới trong nhà để sử dụng như những đèn trụ cổng bình thường cho độ bền vĩnh cửu',
+              'Đèn được trang bị tấm pin năng lượng mặt trời kích thước 11x11cm cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Đèn được trang bị tấm pin năng lượng mặt trời kích thước 11x11cm cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
+            ],
+            features: [
+              'Ban ngày tự động sạc đầy pin bằng năng lượng mặt trời, buổi tối đèn tự động bật sáng',
+              'Có 4 màu sắc ánh sáng: màu Vàng, Trung tính, Trắng và Đỏ chuyển đổi chế độ màu sắc bằng điều khiển từ xa',
+              'Có thể hẹn giờ sáng và tăng giảm độ sáng bằng điều khiển',
+              'Có thể lắp thêm bóng điện và đấu trực tiếp với điện lưới trong nhà để sử dụng',
+            ],
+            mode: [],
+            suitable: [
+              'Đèn chuyên dụng để ngoài trời với độ bền cao',
+              'Dùng để trang trí sân vườn, tiểu cảnh, khuôn viên…',
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
+            ],
+            videos: [
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/3JBc-m82AYo" title="Đèn trụ cổng tường rào hình vuông dẹt size 27cm cực đẹp và hiện đại dùng điện 220V (TC20)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            ],
+            thumbnail:
+              'https://shopreview.vn/wp-content/uploads/2022/11/12019575552_1459825316.jpg',
+            images: [
+              'https://shopreview.vn/wp-content/uploads/2022/11/12090116178_1459825316.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/11/12055993777_1459825316.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/11/12019575552_1459825316-1.jpg',
+            ],
+          },
+          {
+            type: 'den-tru-cong-tru-cot',
+            url_offical:
+              'https://shopreview.vn/mua/den-trang-tri-nang-luong-mat-troi/den-nang-luong-mat-troi-de-tham-co-khuon-vien-san-vuon-biet-thu-nha-vuon-cuc-dep-cs02/',
+            index: 'CS02',
+            name: 'Đèn năng lượng mặt trời để thảm cỏ khuôn viên sân vườn biệt thự nhà vườn cực đẹp (CS02)',
+            slugy_name:
+              'den-nang-luong-mat-troi-de-tham-co-khuon-vien-san-vuon-biet-thu-nha-vuon-cuc-dep-cs02',
+            price: '1.050.000',
+            cur_price: '960.000',
+            discount: '9%',
+            quantity: ~~(Math.random() * 10),
+            power: 10,
+            specifications: [
+              'Có thể lắp thêm bóng điện và đấu trực tiếp với điện lưới trong nhà để sử dụng',
+              'Kích thước: Đèn cao 60.5cm, hộp đèn vuông cạnh 15cm , nặng 2.6kg, đế vuông 20cm',
+              'Chất liệu: Thân đèn làm bằng hợp  kim sơn tĩnh điện cao cấp đẹp tỉ mỉ và siêu bền, pha đèn bằng mica cao cấp, giúp đèn có độ bền đẹp rất cao',
+              'Màu sắc ánh sáng: Có 4 màu ánh sáng trắng, vàng, trung tính và đỏ chuyển đổi qua điều khiển rất tiện lợi',
+              'Màu sắc đèn: Đèn màu đen cực đẹp và sang trọng',
+              'Đèn thiết kế chuyên dụng để ngoài trời: Chống bụi, chống côn trùng bay vào, chống nước hoàn hảo,  không ngại thời tiết nắng mưa gió bão, chịu mọi điều kiện thời tiết',
+              'Đèn sử dụng bóng 24 led thế hệ mới công suất 5W, hiệu suất cao, mang lại độ sáng rất tốt, là điểm nhấn cho không gian của bạn, dùng ổn định và tuổi thọ lên đến 50.000 giờ chiếu sáng (Tương đương 7-10 năm sử dụng)',
+              'Ngoài ra đèn có trang bị thêm dây điện nguồn và đui bóng đèn, có thể đấu với nguồn điện lưới trong nhà để sử dụng như những đèn trụ cổng bình thường cho độ bền vĩnh cửu',
+              'Đèn được trang bị tấm pin năng lượng mặt trời kích thước 11x11cm cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Đèn được trang bị tấm pin năng lượng mặt trời kích thước 11x11cm cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Pin khỏe giúp đèn sáng liên tục 10-12 tiếng mỗi tối',
+            ],
+            features: [
+              'Ban ngày tự động sạc đầy pin bằng năng lượng mặt trời, buổi tối đèn tự động bật sáng',
+              'Có 4 màu sắc ánh sáng: màu Vàng, Trung tính, Trắng và Đỏ chuyển đổi chế độ màu sắc bằng điều khiển từ xa',
+              'Có thể hẹn giờ sáng và tăng giảm độ sáng bằng điều khiển',
+              'Có thể lắp thêm bóng điện và đấu trực tiếp với điện lưới trong nhà để sử dụng',
+            ],
+            mode: [],
+            suitable: [
+              'Đèn chuyên dụng để ngoài trời với độ bền cao',
+              'Dùng để trang trí sân vườn, tiểu cảnh, khuôn viên…',
+              'Buổi tối đèn tự động sáng sẽ rất đẹp và lung linh',
+            ],
+            videos: [
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/xPRSjWJwO8E" title="Đèn năng lượng mặt trời để thảm cỏ khuôn viên sân vườn biệt thự nhà vườn cực đẹp (CS02)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/uu4WIoF3hB0" title="Đèn năng lượng mặt trời để thảm cỏ khuôn viên sân vườn biệt thự nhà vườn cực đẹp (CS02)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            ],
+            thumbnail:
+              'https://shopreview.vn/wp-content/uploads/2022/08/O1CN01zgWh6M1YDxD2fOBzc_4183933026-0-cib.jpg',
+            images: [
+              'https://shopreview.vn/wp-content/uploads/2022/08/O1CN01TPKvDo1YDxD2fOnRF_4183933026-0-cib.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/08/O1CN01RmMdmH1YDxD9U2RrE_4183933026-0-cib.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/08/z3689904541497_e2eec715406c7a50c49a35fa2ef8b6fd.jpg',
+            ],
+          },
+        ],
       },
       // pin nlmt
       pin: {
         name: 'Tấm pin năng lượng mặt trời',
         slugy: 'tam-pin-nang-luong-mat-troi',
-        products: []
-      }
-    }
-  }
+        products: [
+          {
+            type: 'tam-pin-nang-luong-mat-troi',
+            url_offical:
+              'https://shopreview.vn/mua/phu-kien-cam-trai/tam-pin-nang-luong-mat-troi-10w-voi-2-cong-ra-usb-5v-va-dc-12v-18v-sac-nhanh-da-nang-mt03/',
+            index: 'MT03',
+            name: 'Tấm pin năng lượng mặt trời 10W với 2 cổng ra USB 5V và DC 12V-18V sạc nhanh đa năng (MT03)',
+            slugy_name:
+              'tam-pin-nang-luong-mat-troi-10w-voi-2-cong-ra-usb-5v-va-dc-12v-18v-sac-nhanh-da-nang-mt03',
+            price: '690.000',
+            cur_price: '550,000',
+            discount: '20%',
+            quantity: ~~(Math.random() * 10),
+            power: 10,
+            specifications: [
+              'Model mới nhất, hàng cao cấp chính hãng, đẹp tỉ mỉ đến từng chi tiết, vật liệu cao cấp siêu bền bỉ',
+              'Tấm pin có kích thước 43.5x20cm dày 3mm, nặng 500g',
+              'Tấm pin làm bằng nhựa ABS cao cấp với tấm nền nhôm siêu chắc chắn và bền bỉ với thời tiết ngoài trời, dùng lâu năm ko bị lão hóa nhựa. Độ bền sử dụng lên đến 10 năm',
+              'Pin năng lượng mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Pin trang bị 2 cổng USB 5V 3A để sạc các và thắp sáng các thiết bị như điện thoại, bóng điện, quạt, pin, tai nghe, loa, …',
+              'Ngoài ra pin trang bị cổng DC 12V-18V, 0.7A để sạc cho ắc quy, và các thiết bị dùng điện 12V, 18V như bình ắc quy, sạc ô tô…',
+              'Bộ sản phẩm bao gồm: 1 tấm pin nlmt, 4 cốc hút chân không, 1 kẹp cá sấu, 1 bộ sạc xe hơi.',
+            ],
+            features: [],
+            mode: [],
+            suitable: [
+              'Dùng cho các chuyến đi xa, đi phượt, leo núi, cắm trại, đạp xe, đi rừng, đi biển, nương rẫy …',
+              'Dùng để sạc điện và cung cấp điện cho các thiết bị như điện thoại, máy tính, tai nghe, loa đài, pin dự phòng, ắc quy, thắp sáng bóng đèn, quạt …',
+            ],
+            videos: [
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/7X9dakGbfH4" title="Tấm pin năng lượng mặt trời 10W với 2 cổng ra USB 5V và DC 12V-18V sạc nhanh đa năng (MT03)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            ],
+            thumbnail:
+              'https://shopreview.vn/wp-content/uploads/2022/06/z3929800042046_bb6955959679ac50523ed757150a26c3-1.jpg',
+            images: [
+              'https://shopreview.vn/wp-content/uploads/2022/06/z3929801052472_56a14a8ccb77354d821f749ea486259b.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/06/z3929801031680_5bca409258d6f0560191fcb829fd6f25.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/06/z3929799829727_2c0ca38125fd12982cbb1ab2db98a205.jpg',
+            ],
+          },
+          {
+            type: 'tam-pin-nang-luong-mat-troi',
+            url_offical:
+              'https://shopreview.vn/mua/phu-kien-cam-trai/tam-pin-nang-luong-mat-troi-20w-voi-2-cong-ra-usb-5v-co-the-gap-lai-cuc-gon-mt02/',
+            index: 'MT02',
+            name: 'Tấm pin năng lượng mặt trời 20W với 2 cổng ra USB 5V có thể gấp lại cực gọn (MT02)',
+            slugy_name:
+              'tam-pin-nang-luong-mat-troi-20w-voi-2-cong-ra-usb-5v-co-the-gap-lai-cuc-gon-mt02',
+            price: '1.150.000',
+            cur_price: '999.000',
+            discount: '13%',
+            quantity: ~~(Math.random() * 10),
+            power: 20,
+            specifications: [
+              'Model mới nhất, hàng cao cấp chính hãng, đẹp tỉ mỉ đến từng chi tiết, vật liệu cao cấp siêu bền bỉ',
+              'Tấm pin có kích thước 43.5x20cm dày 3mm, nặng 500g',
+              'Tấm pin làm bằng nhựa ABS cao cấp với tấm nền nhôm siêu chắc chắn và bền bỉ với thời tiết ngoài trời, dùng lâu năm ko bị lão hóa nhựa. Độ bền sử dụng lên đến 10 năm',
+              'Pin năng lượng mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Pin trang bị 2 cổng USB 5V 3A để sạc các và thắp sáng các thiết bị như điện thoại, bóng điện, quạt, pin, tai nghe, loa, …',
+              'Ngoài ra pin trang bị cổng DC 12V-18V, 0.7A để sạc cho ắc quy, và các thiết bị dùng điện 12V, 18V như bình ắc quy, sạc ô tô…',
+              'Bộ sản phẩm bao gồm: 1 tấm pin nlmt, 4 cốc hút chân không, 1 kẹp cá sấu, 1 bộ sạc xe hơi.',
+            ],
+            features: [],
+            mode: [],
+            suitable: [
+              'Dùng cho các chuyến đi xa, đi phượt, leo núi, cắm trại, đạp xe, đi rừng, đi biển, nương rẫy …',
+              'Dùng để sạc điện và cung cấp điện cho các thiết bị như điện thoại, máy tính, tai nghe, loa đài, pin dự phòng, ắc quy, thắp sáng bóng đèn, quạt …',
+            ],
+            videos: [
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/y0jmfgx6vCA" title="Tấm pin năng lượng mặt trời 20W với 2 cổng ra USB 5V có thể gấp lại cực gọn (MT02)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            ],
+            thumbnail:
+              'https://shopreview.vn/wp-content/uploads/2022/05/z3509559496513_90e0f9447ede39c54b71dd532bc667e6.jpg',
+            images: [
+              'https://shopreview.vn/wp-content/uploads/2022/05/z3509559377745_df60f16510acb612e5545f53a0c9751c.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/05/z3509559267148_99e3413aa2739ece74aec4a366e1a288.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/05/z3509558875760_2ea623920808cc48c1a03c44934f0201.jpg',
+            ],
+          },
+          {
+            type: 'tam-pin-nang-luong-mat-troi',
+            url_offical:
+              'https://shopreview.vn/mua/phu-kien-cam-trai/tam-pin-nang-luong-mat-troi-da-nang-25w-voi-2-cong-ra-usb-5v-va-dc-12v-18v-dung-sac-va-thap-sang-nhieu-thiet-bi-mt05/',
+            index: 'MT05',
+            name: 'Tấm pin năng lượng mặt trời đa năng 25W với 2 cổng ra USB 5V và DC 12V-18V dùng sạc và thắp sáng nhiều thiết bị (MT05)',
+            slugy_name:
+              'tam-pin-nang-luong-mat-troi-da-nang-25w-voi-2-cong-ra-usb-5v-va-dc-12v-18v-dung-sac-va-thap-sang-nhieu-thiet-bi-mt05',
+            price: '890.000',
+            cur_price: '780.000',
+            discount: '12%',
+            quantity: ~~(Math.random() * 10),
+            power: 25,
+            specifications: [
+              'Model mới nhất, hàng cao cấp chính hãng, đẹp tỉ mỉ đến từng chi tiết, vật liệu cao cấp siêu bền bỉ',
+              'Tấm pin có kích thước 43.5x20cm dày 3mm, nặng 500g',
+              'Tấm pin làm bằng nhựa ABS cao cấp với tấm nền nhôm siêu chắc chắn và bền bỉ với thời tiết ngoài trời, dùng lâu năm ko bị lão hóa nhựa. Độ bền sử dụng lên đến 10 năm',
+              'Pin năng lượng mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Pin trang bị 2 cổng USB 5V 3A để sạc các và thắp sáng các thiết bị như điện thoại, bóng điện, quạt, pin, tai nghe, loa, …',
+              'Ngoài ra pin trang bị cổng DC 12V-18V, 0.7A để sạc cho ắc quy, và các thiết bị dùng điện 12V, 18V như bình ắc quy, sạc ô tô…',
+              'Bộ sản phẩm bao gồm: 1 tấm pin nlmt, 4 cốc hút chân không, 1 kẹp cá sấu, 1 bộ sạc xe hơi.',
+            ],
+            features: [],
+            mode: [],
+            suitable: [
+              'Dùng cho các chuyến đi xa, đi phượt, leo núi, cắm trại, đạp xe, đi rừng, đi biển, nương rẫy …',
+              'Dùng để sạc điện và cung cấp điện cho các thiết bị như điện thoại, máy tính, tai nghe, loa đài, pin dự phòng, ắc quy, thắp sáng bóng đèn, quạt …',
+            ],
+            videos: [
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/0o5aRBIrFuw" title="Tấm pin năng lượng mặt trời đa năng 25W với 2 cổng ra USB 5V và DC 12V-18V sạc và thắp sáng (MT05)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            ],
+            thumbnail:
+              'https://shopreview.vn/wp-content/uploads/2021/12/z3930636273426_8c68266b5c7cb6636ab37cc12a76ced9-1.jpg',
+            images: [
+              'https://shopreview.vn/wp-content/uploads/2021/12/z3930636587842_799de497002e5468bd23e0870e6e178f.jpg',
+              'https://shopreview.vn/wp-content/uploads/2021/12/z3930636340603_91cd05ae6fe7756df1da64cfe6d2ff7b.jpg',
+              'https://shopreview.vn/wp-content/uploads/2021/12/z3930636273426_8c68266b5c7cb6636ab37cc12a76ced9.jpg',
+            ],
+          },
+          {
+            type: 'tam-pin-nang-luong-mat-troi',
+            url_offical:
+              'https://shopreview.vn/mua/phu-kien-cam-trai/tam-pin-nang-luong-mat-troi-voi-cong-ra-usb-sac-truc-tiep-cho-dien-thoai-va-cac-thiet-bi-dien-tu-mt04/',
+            index: 'MT04',
+            name: 'Tấm pin năng lượng mặt trời với cổng ra USB sạc trực tiếp cho điện thoại và các thiết bị điện tử (MT04)',
+            slugy_name:
+              'tam-pin-nang-luong-mat-troi-voi-cong-ra-usb-sac-truc-tiep-cho-dien-thoai-va-cac-thiet-bi-dien-tu-mt04',
+            price: '390.000',
+            cur_price: '350.000',
+            discount: '10%',
+            quantity: ~~(Math.random() * 10),
+            power: 5,
+            specifications: [
+              'Model mới nhất, hàng cao cấp chính hãng, đẹp tỉ mỉ đến từng chi tiết, vật liệu cao cấp siêu bền bỉ',
+              'Tấm pin có kích thước 43.5x20cm dày 3mm, nặng 500g',
+              'Tấm pin làm bằng nhựa ABS cao cấp với tấm nền nhôm siêu chắc chắn và bền bỉ với thời tiết ngoài trời, dùng lâu năm ko bị lão hóa nhựa. Độ bền sử dụng lên đến 10 năm',
+              'Pin năng lượng mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Pin trang bị 2 cổng USB 5V 3A để sạc các và thắp sáng các thiết bị như điện thoại, bóng điện, quạt, pin, tai nghe, loa, …',
+              'Ngoài ra pin trang bị cổng DC 12V-18V, 0.7A để sạc cho ắc quy, và các thiết bị dùng điện 12V, 18V như bình ắc quy, sạc ô tô…',
+              'Bộ sản phẩm bao gồm: 1 tấm pin nlmt, 4 cốc hút chân không, 1 kẹp cá sấu, 1 bộ sạc xe hơi.',
+            ],
+            features: [],
+            mode: [],
+            suitable: [
+              'Dùng cho các chuyến đi xa, đi phượt, leo núi, cắm trại, đạp xe, đi rừng, đi biển, nương rẫy …',
+              'Dùng để sạc điện và cung cấp điện cho các thiết bị như điện thoại, máy tính, tai nghe, loa đài, pin dự phòng, ắc quy, thắp sáng bóng đèn, quạt …',
+            ],
+            videos: [
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/WejXeLm5fJc" title="Tấm pin năng lượng mặt trời cổng ra USB sạc trực tiếp cho điện thoại  và các thiết bị điện tử (MT04)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            ],
+            thumbnail:
+              'https://shopreview.vn/wp-content/uploads/2022/05/10322628876_1531312931.jpg',
+            images: [
+              'https://shopreview.vn/wp-content/uploads/2022/05/z3640697197104_8cf51062f35e2c830fd8f87716086bcf.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/05/z3640684292387_c05d1d543907c21aeabef8394231aeed.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/05/z3640684082582_bd074f43a20432c1a0ccab2c120639f9.jpg',
+            ],
+          },
+          {
+            type: 'tam-pin-nang-luong-mat-troi',
+            url_offical:
+              'https://shopreview.vn/mua/phu-kien-cam-trai/tam-pin-nlmt-30w-voi-2-cong-ra-usb-5v-va-dc-12v-18v-thuan-tien-da-nang-mt01/',
+            index: 'MT01',
+            name: 'Tấm pin NLMT 30W với 2 cổng ra USB 5V và DC 12V-18V thuận tiện đa năng (MT01)',
+            slugy_name:
+              'tam-pin-nlmt-30w-voi-2-cong-ra-usb-5v-va-dc-12v-18v-thuan-tien-dja-nang-mt01',
+            price: '890.000',
+            cur_price: '780.000',
+            discount: '12%',
+            quantity: ~~(Math.random() * 10),
+            power: 30,
+            specifications: [
+              'Model mới nhất, hàng cao cấp chính hãng, đẹp tỉ mỉ đến từng chi tiết, vật liệu cao cấp siêu bền bỉ',
+              'Tấm pin có kích thước 43.5x20cm dày 3mm, nặng 500g',
+              'Tấm pin làm bằng nhựa ABS cao cấp với tấm nền nhôm siêu chắc chắn và bền bỉ với thời tiết ngoài trời, dùng lâu năm ko bị lão hóa nhựa. Độ bền sử dụng lên đến 10 năm',
+              'Pin năng lượng mặt trời cao cấp thế hệ mới Polysilicon với hiệu suất quang điện cao',
+              'Pin trang bị 2 cổng USB 5V 3A để sạc các và thắp sáng các thiết bị như điện thoại, bóng điện, quạt, pin, tai nghe, loa, …',
+              'Ngoài ra pin trang bị cổng DC 12V-18V, 0.7A để sạc cho ắc quy, và các thiết bị dùng điện 12V, 18V như bình ắc quy, sạc ô tô…',
+              'Bộ sản phẩm bao gồm: 1 tấm pin nlmt, 4 cốc hút chân không, 1 kẹp cá sấu, 1 bộ sạc xe hơi.',
+            ],
+            features: [],
+            mode: [],
+            suitable: [
+              'Dùng cho các chuyến đi xa, đi phượt, leo núi, cắm trại, đạp xe, đi rừng, đi biển, nương rẫy …',
+              'Dùng để sạc điện và cung cấp điện cho các thiết bị như điện thoại, máy tính, tai nghe, loa đài, pin dự phòng, ắc quy, thắp sáng bóng đèn, quạt …',
+            ],
+            videos: [
+              '<iframe width="560" height="315" src="https://www.youtube.com/embed/R3FRPLaDu1c" title="Tấm pin NLMT 30W với 2 cổng ra USB 5V và DC 12V-18V thuận tiện đa năng (MT01)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            ],
+            thumbnail:
+              'https://shopreview.vn/wp-content/uploads/2022/07/z3929822411726_db6631fa2bc69af062e5a0e79b0c0c34-1.jpg',
+            images: [
+              'https://shopreview.vn/wp-content/uploads/2022/07/z3929822426960_eb7d626e2f9c9a74dd8c32ced20fba0c.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/07/z3929822422179_0b92bda67b50cfe6b9b3311c45e09ea5.jpg',
+              'https://shopreview.vn/wp-content/uploads/2022/07/z3929822418845_6910b6d2cdf07b5c25047c46de4ffce1.jpg',
+            ],
+          },
+        ],
+      },
+    },
+  },
 };
 
 export default db;

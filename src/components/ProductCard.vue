@@ -1,8 +1,9 @@
 <script setup>
 import { ref } from 'vue';
 
+// khai báo prop truyền vào component là 1 product: kiểu object
 const props = defineProps({
-  product: Object
+  product: Object,
 });
 
 const { product } = props;
@@ -10,6 +11,7 @@ const { product } = props;
 const isHaveInCart = ref(false);
 const fakePending = ref(false);
 
+// hàm xử lý khi nhấn mua ngay
 const addToCartHandler = () => {
   fakePending.value = true;
   setTimeout(() => {
@@ -29,15 +31,15 @@ const addToCartHandler = () => {
           name: 'product-details',
           params: {
             slugy: product.slugy_name,
-            type: product.type
-          }
+            type: product.type,
+          },
         }"
       >
-        <div class="overflow-hidden relative">
+        <div class="overflow-hidden relative h-[300px]">
           <img
             :src="product.thumbnail"
             alt=""
-            class="w-full h-auto object-contain transition-all duration-700"
+            class="w-full h-full object-cover transition-all duration-700"
           />
           <div
             v-if="product.quantity == 0"

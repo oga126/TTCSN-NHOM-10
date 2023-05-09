@@ -1,7 +1,10 @@
 <script setup>
 import ProductCard from '@/components/ProductCard.vue';
 
-const props = defineProps(['products']);
+// khai báo prop truyền vào component là 1 mảng các sản phẩm
+const props = defineProps({
+  products: Object
+});
 const { products } = props;
 </script>
 

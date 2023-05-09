@@ -1,5 +1,4 @@
 <script setup>
-import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 import db from '../../data/index';
 
@@ -17,12 +16,12 @@ const props = defineProps(['products']);
 
 const route = useRoute();
 
-let productTypeName;
-
+// sử dụng thư viện
 const modules = [Navigation, Pagination, Autoplay];
 </script>
 
 <template>
+  <!-- thư viện swiper để tạo slide -->
   <Swiper
     :slides-per-view="4"
     :space-between="10"
