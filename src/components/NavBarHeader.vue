@@ -6,70 +6,70 @@ const NAVBAR_LINK_ITEMS = [
   {
     title: 'Trang chủ',
     router: {
-      name: 'trang-chu'
-    }
+      name: 'trang-chu',
+    },
   },
   {
     title: 'Đèn pha năng lượng mặt trời',
     router: {
       name: 'products-by-type',
-      params: { type: 'den-pha-nang-luong-mat-troi' }
-    }
+      params: { type: 'den-pha-nang-luong-mat-troi' },
+    },
   },
   {
     title: 'Đèn trang trí năng lượng mặt trời',
     router: {
       name: 'products-by-type',
-      params: { type: 'den-trang-tri-nang-luong-mat-troi' }
-    }
+      params: { type: 'den-trang-tri-nang-luong-mat-troi' },
+    },
   },
   {
     title: 'Đèn trụ cổng, trụ cột',
     router: {
       name: 'products-by-type',
-      params: { type: 'den-tru-cong-tru-cot' }
-    }
+      params: { type: 'den-tru-cong-tru-cot' },
+    },
   },
   {
     title: 'Tấm pin năng lượng mặt trời',
     router: {
       name: 'products-by-type',
-      params: { type: 'tam-pin-nang-luong-mat-troi' }
-    }
+      params: { type: 'tam-pin-nang-luong-mat-troi' },
+    },
   },
   {
     title: 'Liên hệ',
     router: {
-      name: 'lien-he'
-    }
-  }
+      name: 'lien-he',
+    },
+  },
 ];
 
 const NAVBAR_CATEGORY = [
   {
     title: 'Thế giới đồ cắm trại',
     router: {
-      name: 'the-gioi-do-cam-trai'
-    }
+      name: 'the-gioi-do-cam-trai',
+    },
   },
   {
     title: 'Đèn năng lượng mặt trời',
     router: {
-      name: 'den-nang-luong-mat-troi'
-    }
+      name: 'den-nang-luong-mat-troi',
+    },
   },
   {
     title: 'Thế giới máy đo',
     router: {
-      name: 'the-gioi-may-do'
-    }
+      name: 'the-gioi-may-do',
+    },
   },
   {
     title: 'Phụ kiện ô tô',
     router: {
-      name: 'phu-kien-o-to'
-    }
-  }
+      name: 'phu-kien-o-to',
+    },
+  },
 ];
 
 // biển để kiểm tra button đã click để show dropdown hay không

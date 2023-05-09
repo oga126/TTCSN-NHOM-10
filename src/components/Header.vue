@@ -12,52 +12,52 @@ import NavBarHeader from '@/components/NavBarHeader.vue';
 const dropdown = [
   {
     value: 'leu-cam-trai',
-    name: 'Lều cắm trại'
+    name: 'Lều cắm trại',
   },
   {
     value: 'den-pha-nang-luong-mat-troi',
-    name: 'Đèn Pha Năng Lượng Mặt Trời'
+    name: 'Đèn Pha Năng Lượng Mặt Trời',
   },
   {
     value: 'den-pin-cam-trai',
-    name: 'Đèn pin cắm trại'
+    name: 'Đèn pin cắm trại',
   },
   {
     value: 'den-trang-tri-nang-luong-mat-troi',
-    name: 'Đèn Trang Trí Năng Lượng Mặt Trời'
+    name: 'Đèn Trang Trí Năng Lượng Mặt Trời',
   },
   {
     value: 'den-tru-cong-tru-cot',
-    name: 'Đèn Trụ Cổng, Trụ Cột'
+    name: 'Đèn Trụ Cổng, Trụ Cột',
   },
   {
     value: 'leu-tre-em',
-    name: 'Lều Trẻ Em'
+    name: 'Lều Trẻ Em',
   },
   {
     value: 'may-do-nong-do-oxy-trong-mau',
-    name: 'Máy Đo Nồng Độ Oxy Trong Máu'
+    name: 'Máy Đo Nồng Độ Oxy Trong Máu',
   },
   {
     value: 'may-khu-doc-thuc-pham',
-    name: 'Máy khử độc thực phẩm'
+    name: 'Máy khử độc thực phẩm',
   },
   {
     value: 'nhiet-ke-hong-ngoai',
-    name: 'Nhiệt Kế Hồng Ngoại'
+    name: 'Nhiệt Kế Hồng Ngoại',
   },
   {
     value: 'phu-kien-cam-trai',
-    name: 'Phụ kiện cắm trại'
+    name: 'Phụ kiện cắm trại',
   },
   {
     value: 'tam-pin-nang-luong-mat-troi',
-    name: 'Tấm Pin Năng Lượng Mặt Trời'
+    name: 'Tấm Pin Năng Lượng Mặt Trời',
   },
   {
     value: 'tuong-de-xe-oto',
-    name: 'Tượng Để Xe Ô Tô'
-  }
+    name: 'Tượng Để Xe Ô Tô',
+  },
 ];
 
 // khai báo biến tham chiếu đến dropdown, khi value của dropdown thay đổi thì seclected cũng bị thay đổi

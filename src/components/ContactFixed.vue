@@ -37,7 +37,9 @@ import { TEL } from '@/constants';
       <div class="w-12 h-12 bg-primary rounded-full flex justify-center items-center relative">
         <font-awesome-icon icon="fa-solid fa-phone" class="ring_icon" />
         <div class="absolute w-[70px] h-[70px] bg-black rounded-full z-[-1] circle_fill"></div>
-        <div class="absolute w-[120px] h-[120px] border border-black rounded-full circle_border"></div>
+        <div
+          class="absolute w-[120px] h-[120px] border border-black rounded-full circle_border"
+        ></div>
       </div>
       <p class="px-2">{{ TEL.display }}</p>
     </a>

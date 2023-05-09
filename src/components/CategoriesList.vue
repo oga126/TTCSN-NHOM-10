@@ -3,7 +3,7 @@ import ProductCard from '@/components/ProductCard.vue';
 
 // khai báo prop truyền vào component là 1 mảng các sản phẩm
 const props = defineProps({
-  products: Object
+  products: Object,
 });
 const { products } = props;
 </script>
@@ -19,8 +19,8 @@ const { products } = props;
           :to="{
             name: 'products-by-type',
             params: {
-              type: products.slugy
-            }
+              type: products.slugy,
+            },
           }"
           class="py-1 px-4 text-white bg-primary rounded-lg hover:bg-[#ffb700] transition-all"
         >

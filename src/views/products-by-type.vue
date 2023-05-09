@@ -51,7 +51,7 @@ const selectOnChange = () => {
       filteredProducts.value = [...target.value].filter(
         ({ cur_price }) =>
           convertPriceVNDToNum(cur_price) >= value.value[0] &&
-          convertPriceVNDToNum(cur_price) < value.value[1]
+          convertPriceVNDToNum(cur_price) < value.value[1],
       );
       break;
     case 'popular':
@@ -66,13 +66,13 @@ const selectOnChange = () => {
     case 'price-from-cheap':
       // sắp xếp lại mảng filteredProducts theo thứ tự tăng dần của giá (phải convert từ chuỗi dạng 1.000.000 về số)
       filteredProducts.value.sort(
-        (a, b) => convertPriceVNDToNum(a.cur_price) - convertPriceVNDToNum(b.cur_price)
+        (a, b) => convertPriceVNDToNum(a.cur_price) - convertPriceVNDToNum(b.cur_price),
       );
       break;
     case 'price-from-expensive':
       // sắp xếp lại mảng filteredProducts theo thứ tự giảm dần của giá (phải convert từ chuỗi dạng 1.000.000 về số)
       filteredProducts.value.sort(
-        (a, b) => convertPriceVNDToNum(b.cur_price) - convertPriceVNDToNum(a.cur_price)
+        (a, b) => convertPriceVNDToNum(b.cur_price) - convertPriceVNDToNum(a.cur_price),
       );
       break;
 
@@ -87,7 +87,7 @@ const filterByPriceLimition = () => {
   filteredProducts.value = [...target.value].filter(
     ({ cur_price }) =>
       convertPriceVNDToNum(cur_price) >= value.value[0] &&
-      convertPriceVNDToNum(cur_price) <= value.value[1]
+      convertPriceVNDToNum(cur_price) <= value.value[1],
   );
 };
 </script>
@@ -147,11 +147,11 @@ const filterByPriceLimition = () => {
                 :dot-options="{
                   style: {
                     background: '#666666',
-                    'border-color': '#666666'
-                  }
+                    'border-color': '#666666',
+                  },
                 }"
                 :process-style="{
-                  background: '#ABABAB'
+                  background: '#ABABAB',
                 }"
               />
             </div>

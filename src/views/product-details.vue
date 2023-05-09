@@ -61,8 +61,8 @@ const increase = () => {
               :to="{
                 name: 'products-by-type',
                 params: {
-                  type: product.type
-                }
+                  type: product.type,
+                },
               }"
               >{{ products.name }}</router-link
             >
@@ -132,8 +132,8 @@ const increase = () => {
               :to="{
                 name: 'products-by-type',
                 params: {
-                  type: product.type
-                }
+                  type: product.type,
+                },
               }"
               class="text-primary transition-all hover:text-dark"
               >{{ products.name }}</router-link
@@ -151,7 +151,7 @@ const increase = () => {
             class="mx-4 border-t-4 transition-all hover:border-t-primary py-4 font-bold text-header-dark text-xl"
             :class="{
               'border-t-primary': isShowDescription,
-              'border-t-transparent': !isShowDescription
+              'border-t-transparent': !isShowDescription,
             }"
           >
             Mô tả
@@ -161,7 +161,7 @@ const increase = () => {
             class="mx-4 border-t-4 transition-all hover:border-t-primary py-4 font-bold text-header-dark text-xl"
             :class="{
               'border-t-primary': !isShowDescription,
-              'border-t-transparent': isShowDescription
+              'border-t-transparent': isShowDescription,
             }"
           >
             Thông tin thanh toán
