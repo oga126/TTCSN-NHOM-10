@@ -3,8 +3,11 @@ import { ref, watchEffect } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
 import { getListProductByType, getProductBySlugyNameInList } from '../../data/service';
+import { cartStore } from '@/stores/cart';
 
 import RecommenedProducts from '@/components/RecommenedProducts.vue';
+
+const { addToCart } = cartStore();
 
 const route = useRoute();
 const router = useRouter();
@@ -35,6 +38,42 @@ const descrease = () => {
 // hàm giảm số lượng
 const increase = () => {
   quantity.value++;
+};
+
+const buyNow = () => {
+  const { index, name, thumbnail, cur_price, slugy_name, type } = product.value;
+
+  setTimeout(() => {
+    addToCart({
+      index,
+      name,
+      thumbnail,
+      cur_price,
+      slugy_name,
+      type,
+      quantity: quantity.value,
+    });
+
+    router.push({ name: 'thanh-toan' });
+  }, 1000);
+};
+
+const onAddToCart = () => {
+  isLoading.value = true;
+  const { index, name, thumbnail, cur_price, slugy_name, type } = product.value;
+
+  setTimeout(() => {
+    addToCart({
+      index,
+      name,
+      thumbnail,
+      cur_price,
+      slugy_name,
+      type,
+      quantity: quantity.value,
+    });
+    isLoading.value = false;
+  }, 1000);
 };
 </script>
 

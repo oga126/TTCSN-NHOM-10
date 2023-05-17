@@ -1,63 +1,63 @@
 <script setup>
 import { ref } from 'vue';
 
-// import { cartStore } from '@/stores/cart';
+import { cartStore } from '@/stores/cart';
 import { convertNumToPriceVND } from '@/utils/format';
 
 import NavBarHeader from '@/components/NavBarHeader.vue';
-// import PreviewProductCart from '@/components/PreviewProductCart.vue';
+import PreviewProductCart from '@/components/PreviewProductCart.vue';
 
-// const { cart, totalQuantity, totalPrice, removeOutCart } = cartStore();
+const { cart, totalQuantity, totalPrice, removeOutCart } = cartStore();
 
 const dropdown = [
   {
     value: 'leu-cam-trai',
-    name: 'Lều cắm trại',
+    name: 'Lều cắm trại'
   },
   {
     value: 'den-pha-nang-luong-mat-troi',
-    name: 'Đèn Pha Năng Lượng Mặt Trời',
+    name: 'Đèn Pha Năng Lượng Mặt Trời'
   },
   {
     value: 'den-pin-cam-trai',
-    name: 'Đèn pin cắm trại',
+    name: 'Đèn pin cắm trại'
   },
   {
     value: 'den-trang-tri-nang-luong-mat-troi',
-    name: 'Đèn Trang Trí Năng Lượng Mặt Trời',
+    name: 'Đèn Trang Trí Năng Lượng Mặt Trời'
   },
   {
     value: 'den-tru-cong-tru-cot',
-    name: 'Đèn Trụ Cổng, Trụ Cột',
+    name: 'Đèn Trụ Cổng, Trụ Cột'
   },
   {
     value: 'leu-tre-em',
-    name: 'Lều Trẻ Em',
+    name: 'Lều Trẻ Em'
   },
   {
     value: 'may-do-nong-do-oxy-trong-mau',
-    name: 'Máy Đo Nồng Độ Oxy Trong Máu',
+    name: 'Máy Đo Nồng Độ Oxy Trong Máu'
   },
   {
     value: 'may-khu-doc-thuc-pham',
-    name: 'Máy khử độc thực phẩm',
+    name: 'Máy khử độc thực phẩm'
   },
   {
     value: 'nhiet-ke-hong-ngoai',
-    name: 'Nhiệt Kế Hồng Ngoại',
+    name: 'Nhiệt Kế Hồng Ngoại'
   },
   {
     value: 'phu-kien-cam-trai',
-    name: 'Phụ kiện cắm trại',
+    name: 'Phụ kiện cắm trại'
   },
   {
     value: 'tam-pin-nang-luong-mat-troi',
-    name: 'Tấm Pin Năng Lượng Mặt Trời',
+    name: 'Tấm Pin Năng Lượng Mặt Trời'
   },
   {
     value: 'tuong-de-xe-oto',
-    name: 'Tượng Để Xe Ô Tô',
-  },
+    name: 'Tượng Để Xe Ô Tô'
+  }
 ];
 
 // khai báo biến tham chiếu đến dropdown, khi value của dropdown thay đổi thì seclected cũng bị thay đổi
@@ -117,12 +117,12 @@ const selected = ref('all');
                   class="border-2 border-primary rounded-full h-8 w-8 flex justify-center items-center relative"
                 >
                   <font-awesome-icon icon="fa-solid fa-cart-shopping" />
-                  <!-- <div
+                  <div
                     v-if="cart.length != 0"
                     class="w-5 h-5 bg-primary rounded-full absolute bottom-[80%] left-[80%] flex justify-center items-center text-white text-sm font-semibold"
                   >
                     {{ totalQuantity() }}
-                  </div> -->
+                  </div>
                 </div>
               </div>
             </router-link>
@@ -130,7 +130,42 @@ const selected = ref('all');
             <!-- dropdown của giỏ hàng -->
             <div
               class="absolute w-[300px] top-full right-0 bg-white shadow-[1px_1px_15px_rgba(0,0,0,0.15)] p-4 z-[99] cart-dropdown"
-            ></div>
+            >
+              <!-- nếu giỏ hàng k có sản phẩm -->
+              <div v-if="cart.length == 0" class="text-center font-normal text-[16px]">
+                Chưa có sản phẩm trong giỏ hàng.
+              </div>
+
+              <!-- nếu giỏ hàng có sản phẩm -->
+              <div v-else>
+                <!-- preview sản phẩm trong giỏ hàng trên header -->
+                <div class="max-h-[400px] overflow-y-scroll">
+                  <preview-product-cart
+                    v-for="product in cart"
+                    :key="product.index"
+                    :product="product"
+                    @on-remove-out-cart="removeOutCart"
+                  />
+                </div>
+
+                <div class="border-t border-b border-t-gray-300 border-b-gray-300 py-3 text-center">
+                  Tổng phụ: {{ convertNumToPriceVND(totalPrice()) }}₫
+                </div>
+
+                <!-- điều hướng -->
+                <div class="text-center text-white">
+                  <router-link
+                    :to="{ name: 'gio-hang' }"
+                    class="bg-primary transition-all hover:bg-primary-hover py-2 block my-4"
+                    >GIỎ HÀNG</router-link
+                  >
+
+                  <router-link :to="{ name: 'thanh-toan' }" class="bg-primary-hover py-2 block"
+                    >THANH TOÁN</router-link
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
