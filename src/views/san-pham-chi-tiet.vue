@@ -2,6 +2,8 @@
 import { ref, watchEffect } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
+import { auth } from '@/config/firebase';
+
 import { getListProductByType, getProductBySlugyNameInList } from '../../data/service';
 import { cartStore } from '@/stores/cart';
 
@@ -23,6 +25,7 @@ const quantity = ref(1);
 // // lấy ra product theo đúng đường dẫn
 const products = ref({});
 const product = ref({});
+
 // nếu params của path thay đổi thì sẽ gọi làm callback truyền và watchEfect
 watchEffect(() => {
   products.value = getListProductByType(route.params.type);
@@ -41,10 +44,20 @@ const increase = () => {
 };
 
 const buyNow = () => {
+  const user = auth.currentUser;
+
+  // kiểm tra nếu chưa đăng nhập thì không cho thêm vào giỏ hàng
+  if (!user) {
+    alert('Bạn cần đăng nhập để thực hiện hành động này!');
+    router.push({ name: 'dang-nhap', params: {} });
+    return;
+  }
+
+  // lấy ra các thông tin cần thiết của sản phẩm
   const { index, name, thumbnail, cur_price, slugy_name, type } = product.value;
 
-  setTimeout(() => {
-    addToCart({
+  setTimeout(async () => {
+    await addToCart({
       index,
       name,
       thumbnail,
@@ -59,11 +72,22 @@ const buyNow = () => {
 };
 
 const onAddToCart = () => {
+  const user = auth.currentUser;
+
+  // kiểm tra nếu chưa đăng nhập thì không cho thêm vào giỏ hàng
+  if (!user) {
+    alert('Bạn cần đăng nhập để thực hiện hành động này!');
+    router.push({ name: 'dang-nhap', params: {} });
+    return;
+  }
+
   isLoading.value = true;
+  
+  // lấy ra các thông tin cần thiết của sản phẩm
   const { index, name, thumbnail, cur_price, slugy_name, type } = product.value;
 
-  setTimeout(() => {
-    addToCart({
+  setTimeout(async () => {
+    await addToCart({
       index,
       name,
       thumbnail,

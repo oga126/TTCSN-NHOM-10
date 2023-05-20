@@ -1,7 +1,5 @@
 <script setup>
-import { useRoute } from 'vue-router';
-import db from '../../data/index';
-
+// import thư viện
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Pagination, Autoplay } from 'swiper';
 // Import Swiper styles
@@ -11,12 +9,12 @@ import 'swiper/css/navigation';
 
 import ProductCard from './ProductCard.vue';
 
-// lấy ra prop truyền từ
-const props = defineProps(['products']);
+// khai báo prop truyền vào component là 1 product: kiểu object
+const props = defineProps({
+  products: Array,
+});
 
-const route = useRoute();
-
-// sử dụng thư viện
+// sử dụng thư viện tạo slide
 const modules = [Navigation, Pagination, Autoplay];
 </script>
 

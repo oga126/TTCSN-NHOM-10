@@ -1,12 +1,26 @@
 <script setup>
-import { cartStore } from '@/stores/cart';
-import { convertNumToPriceVND } from '@/utils/format';
+import { watchEffect, ref } from 'vue';
 import { useRoute } from 'vue-router';
+
+import { cartStore } from '@/stores/cart';
+
+import { useBill } from '@/composable/useBill';
+import { convertNumToPriceVND, formatDate } from '@/utils/format';
+
+const route = useRoute();
+
+// lấy ra hàm tìm kiếm bill theo id để hiển thị
+const { getBillById } = useBill();
 
 const { cart, totalPrice } = cartStore();
 
-const route = useRoute();
-console.log(route);
+// khai báo 1 reative bill
+const bill = ref('');
+
+watchEffect(async () => {
+  // lấy ra đơn hàng có id như params trên thanh địa chỉ
+  bill.value = await getBillById(route.params.id);
+});
 </script>
 
 <template>
@@ -67,8 +81,12 @@ console.log(route);
           Cảm ơn bạn. Đơn hàng của bạn đã được nhận.
         </div>
         <ul class="list-disc list-inside">
-          <li class="py-2">Mã đơn hàng: <b>xxxx</b></li>
-          <li class="py-2">Ngày: <b>15/04/2023</b></li>
+          <li class="py-2">
+            Mã đơn hàng: <b>{{ bill.id }}</b>
+          </li>
+          <li class="py-2">
+            Thời gian: <b>{{ formatDate(new Date(bill.time)) }}</b>
+          </li>
           <li class="py-2">
             Tổng cộng: <b>{{ convertNumToPriceVND(totalPrice() + 25000) }}₫ </b>
           </li>

@@ -1,13 +1,15 @@
 <script setup>
-import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 import ContactFixed from '@/components/ContactFixed.vue';
+import { defineAsyncComponent } from 'vue';
+
+const Header = defineAsyncComponent(() => import('@/components/Header.vue'));
 </script>
 
 <template>
-  <Header />
+  <Header></Header>
 
-  <!-- chuyền các childern html vào -->
+  <!-- chuyền các childern html vào slot -->
   <slot />
 
   <Footer />

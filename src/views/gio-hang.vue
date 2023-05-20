@@ -1,10 +1,13 @@
 <script setup>
 import { ref } from 'vue';
+import { auth } from '@/config/firebase';
 import { cartStore } from '@/stores/cart';
 import { convertNumToPriceVND, convertPriceVNDToNum } from '@/utils/format';
 
 const { cart, totalPrice, removeOutCart } = cartStore();
-console.log(cart);
+
+// lấy ra user đang đăng nhập
+const user = auth.currentUser;
 
 // biến tham chiếu tới input số lượng
 const quantity = ref(cart.map((product) => product.quantity));
@@ -17,11 +20,14 @@ const descrease = (i) => {
 const increase = (i) => {
   quantity.value[i]++;
 };
-
-// biến lưu tổng tiền
 </script>
 
 <template>
+  <div class="flex justify-center">
+    <div class="pt-16">
+      <h2 class="font-bold text-xl">Xin chào {{ user.displayName }}!</h2>
+    </div>
+  </div>
   <!-- nếu giỏ hàng trống -->
   <div v-if="cart.length == 0" class="text-center py-24">
     <div class="mb-6">Chưa có sản phẩm nào trong giỏ hàng.</div>
@@ -65,7 +71,7 @@ const increase = (i) => {
                 <router-link
                   :to="{
                     name: 'product-details',
-                    params: { type: product.type, slugy: product.slugy_name }
+                    params: { type: product.type, slugy: product.slugy_name },
                   }"
                   class="flex items-center"
                 >
@@ -161,7 +167,10 @@ const increase = (i) => {
 
         <router-link
           :to="{
-            name: 'thanh-toan'
+            name: 'thanh-toan',
+            meta: {
+              cart: cart,
+            }
           }"
           class="text-white font-semibold bg-primary-hover transition-all hover:bg-primary py-2 block text-center mt-8"
           >TIẾN HÀNH ĐẶT HÀNG</router-link

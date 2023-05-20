@@ -1,67 +1,76 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, watchEffect } from 'vue';
+
+import { auth } from '@/config/firebase';
+import { useUser } from '@/composable/useUser';
 
 import { cartStore } from '@/stores/cart';
+
 import { convertNumToPriceVND } from '@/utils/format';
 
 import NavBarHeader from '@/components/NavBarHeader.vue';
 import PreviewProductCart from '@/components/PreviewProductCart.vue';
 
-const { cart, totalQuantity, totalPrice, removeOutCart } = cartStore();
+const { cart, totalQuantity, totalPrice, removeOutCart, getCartInFirestore } = cartStore();
 
+// khai báo các dữ liệu cho dropdown thanh tìm kiếm
 const dropdown = [
   {
     value: 'leu-cam-trai',
-    name: 'Lều cắm trại'
+    name: 'Lều cắm trại',
   },
   {
     value: 'den-pha-nang-luong-mat-troi',
-    name: 'Đèn Pha Năng Lượng Mặt Trời'
+    name: 'Đèn Pha Năng Lượng Mặt Trời',
   },
   {
     value: 'den-pin-cam-trai',
-    name: 'Đèn pin cắm trại'
+    name: 'Đèn pin cắm trại',
   },
   {
     value: 'den-trang-tri-nang-luong-mat-troi',
-    name: 'Đèn Trang Trí Năng Lượng Mặt Trời'
+    name: 'Đèn Trang Trí Năng Lượng Mặt Trời',
   },
   {
     value: 'den-tru-cong-tru-cot',
-    name: 'Đèn Trụ Cổng, Trụ Cột'
+    name: 'Đèn Trụ Cổng, Trụ Cột',
   },
   {
     value: 'leu-tre-em',
-    name: 'Lều Trẻ Em'
+    name: 'Lều Trẻ Em',
   },
   {
     value: 'may-do-nong-do-oxy-trong-mau',
-    name: 'Máy Đo Nồng Độ Oxy Trong Máu'
+    name: 'Máy Đo Nồng Độ Oxy Trong Máu',
   },
   {
     value: 'may-khu-doc-thuc-pham',
-    name: 'Máy khử độc thực phẩm'
+    name: 'Máy khử độc thực phẩm',
   },
   {
     value: 'nhiet-ke-hong-ngoai',
-    name: 'Nhiệt Kế Hồng Ngoại'
+    name: 'Nhiệt Kế Hồng Ngoại',
   },
   {
     value: 'phu-kien-cam-trai',
-    name: 'Phụ kiện cắm trại'
+    name: 'Phụ kiện cắm trại',
   },
   {
     value: 'tam-pin-nang-luong-mat-troi',
-    name: 'Tấm Pin Năng Lượng Mặt Trời'
+    name: 'Tấm Pin Năng Lượng Mặt Trời',
   },
   {
     value: 'tuong-de-xe-oto',
-    name: 'Tượng Để Xe Ô Tô'
-  }
+    name: 'Tượng Để Xe Ô Tô',
+  },
 ];
 
 // khai báo biến tham chiếu đến dropdown, khi value của dropdown thay đổi thì seclected cũng bị thay đổi
 const selected = ref('all');
+
+// Lấy ra user hiện tại đăng nhập
+const { getUser } = useUser();
+const { user } = getUser();
 </script>
 
 <template>
@@ -105,7 +114,15 @@ const selected = ref('all');
 
         <!-- Đăng nhập và giỏ hàng -->
         <div class="flex items-center text-[13px] font-semibold">
-          <div class="mr-4 text-dark-light">ĐĂNG NHẬP</div>
+          <div v-if="!user" class="mr-4 text-dark-light">
+            <router-link :to="{ name: 'dang-nhap', params: {} }">ĐĂNG NHẬP</router-link>
+          </div>
+
+          <div v-else class="mr-4 text-dark-light">
+            <router-link :to="{ name: 'tai-khoan', params: {} }">{{
+              user.displayName
+            }}</router-link>
+          </div>
 
           <div class="relative cart-hover">
             <!-- giỏ hang -->

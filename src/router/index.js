@@ -1,4 +1,11 @@
+import { auth } from '@/config/firebase';
 import { createRouter, createWebHistory } from 'vue-router';
+
+const beforeAppEnter = (to, from, next) => {
+  const user = auth.currentUser;
+  if (!user) next({ name: 'dang-nhap', params: {} });
+  else next();
+};
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -6,7 +13,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'trang-chu',
-      component: () => import('@/views/home.vue'),
+      component: () => import('@/views/trang-chu.vue'),
     },
     {
       path: '/the-gioi-do-cam-trai',
@@ -31,7 +38,7 @@ const router = createRouter({
     {
       path: '/:type',
       name: 'products-by-type',
-      component: () => import('@/views/products-by-type.vue'),
+      component: () => import('@/views/san-pham-theo-loai.vue'),
     },
     /**
      * path: '/:type' tức là các đường dẫn có dạng linh động, :type tức là có thể thay đổi type
@@ -41,7 +48,7 @@ const router = createRouter({
     {
       path: '/:type/:slugy',
       name: 'product-details',
-      component: () => import('@/views/product-details.vue'),
+      component: () => import('@/views/san-pham-chi-tiet.vue'),
     },
     // trang liên hệ
     {
@@ -54,18 +61,21 @@ const router = createRouter({
       path: '/gio-hang',
       name: 'gio-hang',
       component: () => import('@/views/gio-hang.vue'),
+      beforeEnter: beforeAppEnter,
     },
     // trang thanh toán
     {
       path: '/thanh-toan',
       name: 'thanh-toan',
       component: () => import('@/views/thanh-toan.vue'),
+      // beforeEnter: 
     },
     // trang thông tin đơn hàng
     {
-      path: '/thong-tin-don-hang',
+      path: '/thong-tin-don-hang/:id',
       name: 'thong-tin-don-hang',
       component: () => import('@/views/thong-tin-don-hang.vue'),
+      beforeEnter: beforeAppEnter,
     },
     // trnag chính sách vận chuyển
     {
@@ -79,11 +89,35 @@ const router = createRouter({
       name: 'chinh-sach-thanh-toan',
       component: () => import('@/views/chinh-sach-thanh-toan.vue'),
     },
-    // trnag chính sách đổi trả
+    // trang chính sách đổi trả
     {
       path: '/chinh-sach-doi-tra',
       name: 'chinh-sach-doi-tra',
       component: () => import('@/views/chinh-sach-doi-tra.vue'),
+    },
+    // trang dang nhap
+    {
+      path: '/dang-nhap',
+      name: 'dang-nhap',
+      component: () => import('@/views/dang-nhap.vue'),
+    },
+    // trang đăng ký
+    {
+      path: '/dang-ky',
+      name: 'dang-ky',
+      component: () => import('@/views/dang-ky.vue'),
+    },
+    // trang quên mật khẩu
+    {
+      path: '/quen-mat-khau',
+      name: 'quen-mat-khau',
+      component: () => import('@/views/quen-mat-khau.vue'),
+    },
+    {
+      path: '/tai-khoan',
+      name: 'tai-khoan',
+      component: () => import('@/views/tai-khoan.vue'),
+      beforeEnter: beforeAppEnter,
     },
   ],
   scrollBehavior(to, from, savedPosition) {

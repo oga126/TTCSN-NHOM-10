@@ -2,27 +2,72 @@
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { cartStore } from '@/stores/cart';
-import { convertNumToPriceVND } from '@/utils/format';
+
+import uniqid from 'uniqid';
+
+import { doc, updateDoc, getDoc } from 'firebase/firestore';
+import { auth, db } from '@/config/firebase';
+
+import { useBill } from '@/composable/useBill';
+
+import { convertNumToPriceVND, formatTime } from '@/utils/format';
 
 const router = useRouter();
-const { cart, totalPrice } = cartStore();
+
+const { createNewBill } = useBill();
+
+const { cart, totalPrice, clearCart } = cartStore();
+
+const nameInput = ref('');
+const addressInput = ref('');
+const phoneInput = ref('');
+const emailInput = ref('');
 
 const isLoading = ref(false);
 
 const submitFormHandler = () => {
   isLoading.value = true;
-  setTimeout(() => {
-    isLoading.value = false;
+  setTimeout(async () => {
+    // tạo đơn hàng mới dựa trên các thông tin vừa nhập, giỏ hàng, thời gian hiện tại...
+    const newBill = {
+      id: uniqid(),
+      status: 'chờ người bán xác nhận',
+      communication: {
+        name: nameInput.value,
+        address: addressInput.value,
+        phone: phoneInput.value,
+        email: emailInput.value,
+      },
+      // sản phẩm là là các sản phẩm trong giỏ hàng
+      products: cart,
+      totalPrice: convertNumToPriceVND(totalPrice() + 25000),
+      createAt: formatTime(new Date()),
+      time: new Date().getTime(),
+    };
+
+    // gửi dữ liệu lên firestore
+    const respone = await createNewBill(newBill);
+
+    // clear giỏ hàng
+    clearCart();
+
+    // chuyển hướng về trang thông tin đơn hàng
     router.push({
       name: 'thong-tin-don-hang',
-      
+      params: {
+        id: newBill.id,
+      },
     });
+    isLoading.value = false;
   }, 2000);
 };
 </script>
 
 <template>
   <div class="max-w-[1200px] mx-auto pt-10 pb-24">
+    <!-- <div v-if="cart.length == 0">
+      Bạn chưa có sản phẩm nào để thanh toán. Vui lòng chọn mua 1 sản phẩm
+    </div> -->
     <form @submit.prevent="submitFormHandler" action="" method="POST" class="flex justify-between">
       <!-- trường nhập thông tin -->
       <div class="w-[55%] mr-10 border-t-2 border-t-gray-300">
@@ -32,6 +77,7 @@ const submitFormHandler = () => {
         <label for="name" class="block pb-4">
           <div class="font-bold text-sm mb-2">Họ và tên *</div>
           <input
+            v-model="nameInput"
             required
             type="text"
             name="name"
@@ -45,6 +91,7 @@ const submitFormHandler = () => {
         <label for="address" class="block pb-4">
           <div class="font-bold text-sm mb-2">Địa chỉ *</div>
           <input
+            v-model="addressInput"
             required
             type="text"
             name="address"
@@ -58,6 +105,7 @@ const submitFormHandler = () => {
         <label for="phone" class="block pb-4">
           <div class="font-bold text-sm mb-2">Số điện thoại *</div>
           <input
+            v-model="phoneInput"
             required
             type="text"
             name="phone"
@@ -68,8 +116,9 @@ const submitFormHandler = () => {
 
         <!-- email - không bắt buộc -->
         <label for="email" class="block pb-4">
-          <div class="font-bold text-sm mb-2">Số điện thoại *</div>
+          <div class="font-bold text-sm mb-2">Địa chỉ email (Không bắt buộc)</div>
           <input
+            v-model="emailInput"
             type="email"
             name="email"
             id="email"

@@ -1,6 +1,7 @@
 <script setup>
+// khai báo prop truyền vào component là 1 product: kiểu object
 const props = defineProps({
-  product: Object
+  product: Object,
 });
 
 const { product } = props;
@@ -19,8 +20,8 @@ const removeOutCartHandler = () => {
         name: 'product-details',
         params: {
           type: product.type,
-          slugy: product.slugy_name
-        }
+          slugy: product.slugy_name,
+        },
       }"
       class="flex"
     >

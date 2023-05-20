@@ -70,19 +70,6 @@ import { TEL } from '@/constants';
               <router-link :to="{ name: 'chinh-sach-doi-tra' }"> Chính sách đổi trả </router-link>
             </li>
           </ul>
-
-          <!-- Liên kết facebook -->
-          <!-- Facebook Page Plugin -->
-          <iframe
-            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FShopReview.vn%2F&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId"
-            width="340"
-            height="130"
-            style="border: none; overflow: hidden"
-            scrolling="no"
-            frameborder="0"
-            allowfullscreen="true"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          ></iframe>
         </div>
       </div>
     </div>

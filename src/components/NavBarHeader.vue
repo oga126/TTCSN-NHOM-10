@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import { TEL } from '@/constants/index';
 
+// dữ liệu các link
 const NAVBAR_LINK_ITEMS = [
   {
     title: 'Trang chủ',
@@ -45,6 +46,7 @@ const NAVBAR_LINK_ITEMS = [
   },
 ];
 
+// dữ liệu menu dropdown màu xanh
 const NAVBAR_CATEGORY = [
   {
     title: 'Thế giới đồ cắm trại',
