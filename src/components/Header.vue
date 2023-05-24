@@ -13,57 +13,6 @@ import PreviewProductCart from '@/components/PreviewProductCart.vue';
 
 const { cart, totalQuantity, totalPrice, removeOutCart, getCartInFirestore } = cartStore();
 
-// khai báo các dữ liệu cho dropdown thanh tìm kiếm
-const dropdown = [
-  {
-    value: 'leu-cam-trai',
-    name: 'Lều cắm trại',
-  },
-  {
-    value: 'den-pha-nang-luong-mat-troi',
-    name: 'Đèn Pha Năng Lượng Mặt Trời',
-  },
-  {
-    value: 'den-pin-cam-trai',
-    name: 'Đèn pin cắm trại',
-  },
-  {
-    value: 'den-trang-tri-nang-luong-mat-troi',
-    name: 'Đèn Trang Trí Năng Lượng Mặt Trời',
-  },
-  {
-    value: 'den-tru-cong-tru-cot',
-    name: 'Đèn Trụ Cổng, Trụ Cột',
-  },
-  {
-    value: 'leu-tre-em',
-    name: 'Lều Trẻ Em',
-  },
-  {
-    value: 'may-do-nong-do-oxy-trong-mau',
-    name: 'Máy Đo Nồng Độ Oxy Trong Máu',
-  },
-  {
-    value: 'may-khu-doc-thuc-pham',
-    name: 'Máy khử độc thực phẩm',
-  },
-  {
-    value: 'nhiet-ke-hong-ngoai',
-    name: 'Nhiệt Kế Hồng Ngoại',
-  },
-  {
-    value: 'phu-kien-cam-trai',
-    name: 'Phụ kiện cắm trại',
-  },
-  {
-    value: 'tam-pin-nang-luong-mat-troi',
-    name: 'Tấm Pin Năng Lượng Mặt Trời',
-  },
-  {
-    value: 'tuong-de-xe-oto',
-    name: 'Tượng Để Xe Ô Tô',
-  },
-];
 
 // khai báo biến tham chiếu đến dropdown, khi value của dropdown thay đổi thì seclected cũng bị thay đổi
 const selected = ref('all');
@@ -88,26 +37,13 @@ const { user } = getUser();
         ></router-link>
 
         <!-- Tìm kiếm -->
-        <div class="flex items-center border border-primary rounded-md">
-          <select
-            class="outline-none bg-gray-100 py-3 rounded-tl-md rounded-bl-md text-sm"
-            name=""
-            id=""
-            v-model="selected"
-            @change="dropdowChange"
-          >
-            <option value="all" selected class="bg-white">All</option>
-            <option v-for="item in dropdown" :key="item.value" :value="item.value" class="bg-white">
-              {{ item.name }}
-            </option>
-          </select>
-
+        <div class="flex items-center border border-primary rounded-md w-[500px] relative overflow-hidden">
           <input
             type="text"
             placeholder="Tìm kiếm các danh mục, sản phẩm..."
-            class="outline-none h-full py-3 pl-4 text-sm"
+            class="outline-none h-full w-full py-3 pl-4 text-sm"
           />
-          <button class="bg-primary-hover h-full w-full py-2 px-6 rounded-tr-md rounded-br-md">
+          <button class="bg-primary-hover h-full w-full py-2 px-6 rounded-tr-md rounded-br-md w-[50px] absolute top-0 bottom-0 right-0">
             <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="text-white" />
           </button>
         </div>

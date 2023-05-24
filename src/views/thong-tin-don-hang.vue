@@ -16,10 +16,12 @@ const { cart, totalPrice } = cartStore();
 
 // khai báo 1 reative bill
 const bill = ref('');
+const products = ref([]);
 
 watchEffect(async () => {
   // lấy ra đơn hàng có id như params trên thanh địa chỉ
   bill.value = await getBillById(route.params.id);
+  products.value = bill.value.products;
 });
 </script>
 
@@ -40,7 +42,7 @@ watchEffect(async () => {
 
           <tbody class="text-sm text-dark">
             <!-- sản phẩm -->
-            <tr class="border-b border-b-gray-300" v-for="product in cart" :key="product.index">
+            <tr class="border-b border-b-gray-300" v-for="product in products" :key="product.index">
               <td class="py-2 text-primary">
                 {{ product.name }}
                 <span class="font-semibold text-[#666]">x {{ product.quantity }}</span>
@@ -51,7 +53,7 @@ watchEffect(async () => {
             <!-- tổng phụ -->
             <tr class="border-b border-b-gray-300 font-bold whitespace-nowrap">
               <td class="py-2">Tổng phụ</td>
-              <td class="py-2 text-right">{{ convertNumToPriceVND(totalPrice()) }}₫</td>
+              <td class="py-2 text-right">{{ convertNumToPriceVND(totalPrice(products)) }}₫</td>
             </tr>
 
             <!-- phí ship -->
@@ -68,7 +70,9 @@ watchEffect(async () => {
           <tfoot class="text-sm font-semibold border-b-2 border-b-gray-300 whitespace-nowrap">
             <tr class="">
               <td class="py-2">Tổng</td>
-              <td class="py-2 text-right">{{ convertNumToPriceVND(totalPrice() + 25000) }}₫</td>
+              <td class="py-2 text-right">
+                {{ convertNumToPriceVND(totalPrice(products) + 25000) }}₫
+              </td>
             </tr>
           </tfoot>
         </table>
@@ -88,7 +92,7 @@ watchEffect(async () => {
             Thời gian: <b>{{ formatDate(new Date(bill.time)) }}</b>
           </li>
           <li class="py-2">
-            Tổng cộng: <b>{{ convertNumToPriceVND(totalPrice() + 25000) }}₫ </b>
+            Tổng cộng: <b>{{ convertNumToPriceVND(totalPrice(products) + 25000) }}₫ </b>
           </li>
           <li class="py-2">Phương thức thanh toán: <b>Trả tiền mặt khi nhận hàng</b></li>
         </ul>

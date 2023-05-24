@@ -54,15 +54,6 @@ const selectOnChange = () => {
           convertPriceVNDToNum(cur_price) < value.value[1],
       );
       break;
-    case 'popular':
-      console.log('popular');
-      break;
-    case 'rating':
-      console.log('rating');
-      break;
-    case 'latest':
-      console.log('latest');
-      break;
     case 'price-from-cheap':
       // sắp xếp lại mảng filteredProducts theo thứ tự tăng dần của giá (phải convert từ chuỗi dạng 1.000.000 về số)
       filteredProducts.value.sort(
@@ -117,9 +108,6 @@ const filterByPriceLimition = () => {
           @change="selectOnChange"
         >
           <option value="default">Thứ tự mặc định</option>
-          <option value="popular">Thứ tự theo thứ tự phổ biến</option>
-          <option value="rating">Thứ tự theo điểm đánh giá</option>
-          <option value="latest">Mới nhất</option>
           <option value="price-from-cheap">Thứ tự theo giá: thấp đến cao</option>
           <option value="price-from-expensive">Thứ tự theo giá: cao đến thấp</option>
         </select>

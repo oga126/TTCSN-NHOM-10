@@ -95,9 +95,9 @@ export const cartStore = defineStore('cart', () => {
   };
 
   // hàm tính tổng số lượng sản phẩm trong giỏ hàng
-  const totalQuantity = () => {
+  const totalQuantity = (products = cart.value) => {
     // tạo 1 mảng chứa các sô lượng của từng sản phẩm
-    const arrQuantity = cart.value.map((product) => product.quantity);
+    const arrQuantity = products.map((product) => product.quantity);
 
     // tính tổng dựa trên mảng đó
     const sum = arrQuantity.reduce((acc, cur) => acc + cur, 0);
@@ -105,11 +105,11 @@ export const cartStore = defineStore('cart', () => {
   };
 
   // hàm tính tổng giá tiền tất cả sản phẩm trong gior hàng
-  const totalPrice = () => {
+  const totalPrice = (products = cart.value) => {
     let total = 0;
 
     // lặp từng sản phẩm
-    cart.value.forEach((product) => {
+    products.forEach((product) => {
       // chuyển về giá số và tính toán
       const price = convertPriceVNDToNum(product.cur_price);
       total += price * product.quantity;
